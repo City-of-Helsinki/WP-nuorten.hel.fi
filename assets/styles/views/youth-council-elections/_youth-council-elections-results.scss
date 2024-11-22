@@ -1,0 +1,36 @@
+.youth-council-elections {
+    &__no-results {
+        font-size: $fontsize-heading-m;
+    }
+
+    &__result-meta {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-2-xl;
+
+        @include breakpoint(m) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__result-count {
+        font-size: $fontsize-heading-m;
+        font-weight: 700;
+    }
+
+    &__results {
+        margin-bottom: $spacing-5-xl;
+    }
+
+    &__grid {
+        @include grid();
+        margin-bottom: $spacing-5-xl;
+        grid-gap: $spacing-s;
+
+        @include breakpoint(s) {
+            grid-gap: $spacing-m;
+        }
+    }
+}

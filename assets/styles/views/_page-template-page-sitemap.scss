@@ -1,0 +1,16 @@
+.page-template-page-sitemap {
+    .page-sitemap-container {
+        padding-bottom: $spacing-layout-2-xl;
+    }
+
+    .pages-list {
+        @include list-reset;
+
+        list-style: inside;
+
+        a {
+            font-weight: bold;
+            color: $color-black;
+        }
+    }
+}

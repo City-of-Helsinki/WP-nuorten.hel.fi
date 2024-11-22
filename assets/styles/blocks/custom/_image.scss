@@ -1,0 +1,28 @@
+.nuhe-image {
+    margin-top: $spacing-layout-m;
+    margin-bottom: $spacing-layout-m;
+
+    &.alignleft {
+        @include breakpoint(m) {
+            width: 50%;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            figure {
+                margin-right: $spacing-l;
+            }
+        }
+    }
+}
+
+[data-type="acf/image"] {
+    z-index: 1;
+
+    .wp-block {
+        &[data-align="left"] {
+            > * {
+                float: none;
+            }
+        }
+    }
+}

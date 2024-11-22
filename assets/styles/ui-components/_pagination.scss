@@ -1,0 +1,32 @@
+.pagination {
+    margin: $spacing-2-xl 0;
+
+    .nav-links {
+        > .page-numbers,
+        > .next,
+        > .prev {
+            line-height: 1;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: $spacing-s;
+            color: $color-white;
+            text-decoration: none;
+            background-color: $color-black;
+
+            &:hover,
+            &:focus {
+                background-color: $color-black-80;
+            }
+        }
+
+        > .current {
+            background-color: $color-black-70;
+
+            &:hover,
+            &:focus {
+                background-color: $color-black-70;
+            }
+        }
+    }
+}

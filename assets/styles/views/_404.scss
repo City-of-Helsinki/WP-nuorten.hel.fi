@@ -1,0 +1,11 @@
+.error-404 {
+    &__description {
+        font-size: $fontsize-body-l;
+        margin-bottom: $spacing-5-xl;
+        padding-bottom: $spacing-5-xl;
+
+        @include breakpoint(l) {
+            font-size: $fontsize-body-xl;
+        }
+    }
+}

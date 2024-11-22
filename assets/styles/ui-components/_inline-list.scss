@@ -1,0 +1,30 @@
+.inline-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    > li {
+        display: inline-block;
+        margin: 0 $spacing-s $spacing-s;
+    }
+
+    @include breakpoint(s) {
+        display: flex;
+
+        > li {
+            display: block;
+            margin: 0 $spacing-layout-s 0 0;
+        }
+    }
+
+    &--align-end {
+        @include breakpoint(s) {
+            justify-content: flex-end;
+        
+            > li {
+                margin: 0 0 0 $spacing-layout-s;
+            }
+        }
+    }
+}

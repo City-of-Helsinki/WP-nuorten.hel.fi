@@ -1,0 +1,65 @@
+.helbit-jobs {
+    &__wrapper {
+        position: relative;
+        margin-top: $spacing-5-xl;
+        padding: $spacing-5-xl 0;
+        background-color: $color-black-5;
+    }
+
+
+    &__list {
+        @include list-reset();
+    }
+
+    .helbit-job-item {
+        background-color: $color-white;
+
+        &__title {
+            font-size: $fontsize-heading-m;
+            line-height: 1.1;
+            margin-top: 0;
+        }
+
+        &__detail-title {
+            font-weight: bold;
+            margin-bottom: 0;
+
+            & + p {
+                margin-top: 0;
+            }
+        }
+
+        &__primary-details {
+            @include breakpoint(m) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &__primary-detail-box {
+            @include breakpoint(m) {
+                width: 48%;
+            }
+        }
+
+        &__more-info {
+            margin-top: $spacing-m;
+        }
+
+        &__link {
+            color: $color-black;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+    
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                border-color: $color-black;
+            }
+        }
+
+        &__job-desc {
+            margin-top: $spacing-s;
+        }
+    }
+}

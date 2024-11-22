@@ -1,0 +1,57 @@
+.nuhe-attention-bulletin {
+    padding-top: $spacing-l;
+    padding-bottom: $spacing-l;
+    background-color: $color-engel;
+
+    .container {
+        position: relative;
+
+        > .hds-icon {
+            @include breakpoint(s) {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .container-inner {
+        @include breakpoint(s) {
+            padding-left: $spacing-layout-xl;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__description {
+        margin-top: $spacing-l;
+    
+        @include breakpoint(l) {
+            max-width: 80%;
+        }
+    
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .attention-bulletin-links {
+        margin-top: $spacing-xl;
+    }
+
+    &--block {
+        padding-right: $spacing-l;
+        padding-left: $spacing-l;
+    }
+}
+
+

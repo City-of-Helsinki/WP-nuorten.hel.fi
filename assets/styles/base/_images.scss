@@ -1,0 +1,101 @@
+/* Styling for the sites images */
+
+// Need a bit of !important to override some Bulmas styles
+// sass-lint:disable no-important
+
+// sass-lint:disable force-element-nesting
+figure,
+.content figure {
+    line-height: 0;
+    display: block;
+    max-width: 100%;
+    margin: 0;
+
+    img {
+        margin-bottom: 0;
+    }
+
+    .figcaption-span {
+        display: block;
+    }
+
+    .image-caption {
+        font-size: $fontsize-body-m;
+        font-weight: bold;
+        margin: 0;
+        padding: $spacing-2-xs $spacing-m;
+        background-color: $color-grey;
+    }
+}
+
+.image-by {
+    display: block;
+    margin-top: $spacing-xs;
+    margin-bottom: $spacing-xs;
+    color: $color-grey--dark;
+    text-align: right;
+
+    .page-template-page-theme & {
+        display: none;
+
+        @include breakpoint(l) {
+            display: block;
+        }
+    }
+}
+
+.size-full {
+    width: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aligncenter {
+    max-width: 80%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.alignleft {
+    margin: 0;
+}
+
+.wp-caption-text,
+.content figcaption.wp-caption-text { //sass-lint:disable-line no-qualifying-elements force-element-nesting
+    font-size: $fontsize-body-s;
+    font-style: normal;
+
+    width: auto;
+    padding: $spacing-s;
+
+    text-align: left;
+
+    background: $color-white;
+}
+
+.img-container {
+    @extend .objectfit-image-wrapper;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+
+    &::before {
+        content: " ";
+        display: block;
+        width: 100%;
+        padding-bottom: percentage(9/16);
+    }
+    
+    img {
+        @extend .objectfit-image;
+    }
+}
+
+@mixin bg-cover() {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

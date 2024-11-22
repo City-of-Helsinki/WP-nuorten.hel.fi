@@ -1,0 +1,44 @@
+.grid-columns {
+    @include grid();
+    @include gutter();
+
+    &__column {
+        grid-column: span 4;
+
+        &--location-data-wrapper {
+            @include breakpoint(m) {
+                padding-left: $spacing-2-xs;
+            }
+        }
+    }
+
+    &--2 & {
+        &__column {
+            @include breakpoint(m) {
+                grid-column: span 4;
+            }
+            @include breakpoint(l) {
+                grid-column: span 6;
+            }
+        }
+    }
+
+    &--3 & {
+        &__column {
+            @include breakpoint(l) {
+                grid-column: span 4;
+            }
+        }
+    }
+
+    &--4 & {
+        &__column {
+            @include breakpoint(l) {
+                grid-column: span 6;
+            }
+            @include breakpoint(xl) {
+                grid-column: span 3;
+            }
+        }
+    }
+}

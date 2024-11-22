@@ -1,0 +1,33 @@
+.wp-block-quote,
+[data-type="core/quote"] {
+    margin-right: $spacing-2-xl;
+    margin-left: $spacing-2-xl;
+    quotes: "“" "”";
+
+    p {
+        font-size: $fontsize-body-xl;
+        font-weight: bold;
+        margin-bottom: $spacing-2-xs;
+
+        &::before {
+            content: open-quote;
+        }
+        &::after {
+            content: close-quote;
+        }
+    }
+
+    cite {
+        font-style: normal;
+        position: relative;
+        margin-left: $spacing-s;
+        padding-left: $spacing-2-xs;
+
+        &::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            margin-right: $spacing-2-xs;
+        }
+    }
+}

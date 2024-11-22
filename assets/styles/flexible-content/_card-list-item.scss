@@ -1,0 +1,119 @@
+.card-list-item {
+    $card-list-item: &;
+
+    display: flex;
+    flex-direction: column;
+    
+    &--respa {
+        background-color: $color-white;
+    }
+
+    .nuhe-layout--sidebar & {
+        &:not(.has-bg-color) {
+            margin-bottom: $spacing-3-xl;
+        }
+    }
+
+    &__inner-container {
+        &.has-bg-color {
+            padding-top: $spacing-5-xl * 2;
+            padding-bottom: $spacing-5-xl * 2;
+        }
+
+        .img-container {
+            &::before {
+                #{$card-list-item}--respa & {
+                    padding-bottom: 33.25%;
+                }
+            }
+        }
+    }
+
+    &__date {
+        margin-top: $spacing-m;
+    }
+
+    &__location {
+        margin: $spacing-3-xs 0;
+    }
+
+    &__keywords {
+        position: absolute;
+        top: 0;
+        right: $spacing-m;
+        left: $spacing-m;
+        transform: translateY(-100%);
+
+        .keyword {
+            font-weight: 400;
+            color: $color-white;
+            background-color: $color-black;
+        }
+    }
+
+    &__content {
+        padding: $spacing-l $spacing-xl;
+        text-align: center;
+
+        #{$card-list-item}--respa &,
+        #{$card-list-item}--vet & {
+            padding: $spacing-m $spacing-m $spacing-l;
+            text-align: left;
+        }
+
+        #{$card-list-item}--initiative & {
+            padding-right: $spacing-s;
+            padding-left: $spacing-s;
+        }
+
+        #{$card-list-item}--vet & {
+            position: relative;
+            padding-top: 0;
+        }
+
+        .respa-space-price {
+            font-weight: 700;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: $spacing-s;
+
+            .hds-icon {
+                margin-right: $spacing-2-xs;
+            }
+        }
+
+        &.color-theme-1 {
+            &::after {
+                background-color: $color-theme-1;
+            }
+        }
+
+        &.color-theme-2 {
+            &::after {
+                background-color: $color-theme-2;
+            }
+        }
+
+        &.color-theme-3 {
+            &::after {
+                background-color: $color-theme-3;
+            }
+        }
+
+        &.color-theme-4 {
+            &::after {
+                background-color: $color-theme-4;
+            }
+        }
+
+        &.has-bg-image {
+            background-color: $color-white;
+        }
+
+        p {
+            margin-top: $spacing-2-xs;
+            margin-bottom: 0;
+        }
+    }
+}

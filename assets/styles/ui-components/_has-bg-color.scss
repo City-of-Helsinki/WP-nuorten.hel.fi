@@ -1,0 +1,125 @@
+.has-bg-color {
+    &--grey {
+        background-color: $color-grey;
+    }
+    
+    &--white {
+        background-color: $color-white;
+    }
+
+    &--black {
+        background-color: $color-black;
+    }
+
+    &--blue {
+        background-color: $color-fog;
+    }
+
+    &--light-blue {
+        background-color: $color-fog-medium-light;
+    }
+
+    &--beige {
+        background-color: $color-gold-medium-light;
+    }
+
+    &--pink {
+        background-color: $color-theme-1;
+    }
+
+    &--beige-light {
+        background-color: $color-gold-light;
+    }
+
+    &--purple {
+        background-color: $color-bus-medium-light;
+    }
+
+    &--color-bus-light {
+        background-color: $color-bus-light;
+    }         
+    &--color-brick-light {
+        background-color: $color-brick-light;
+    }       
+    &--color-tram-light {
+        background-color: $color-tram-light;
+    }        
+    &--color-coat-of-arms-light {
+        background-color: $color-coat-of-arms-light;
+    }
+    &--color-metro-light {
+        background-color: $color-metro-light;
+    }       
+    &--color-copper-light {
+        background-color: $color-copper-light;
+    }      
+    &--color-fog-light {
+        background-color: $color-fog-light;
+    }         
+    &--color-suomenlinna-light {
+        background-color: $color-suomenlinna-light;
+    } 
+    &--color-silver-light {
+        background-color: $color-silver-light;
+    }
+    &--color-summer {
+        background-color: $color-summer-medium-light;
+    }
+    &--color-young-voice {
+        background-color: $color-young-voice;
+    }
+
+    &--coat-of-arms {
+        background-color: $color-coat-of-arms-medium-light;
+    }
+    &--gold {
+        background-color: $color-gold-medium-light;
+    }
+    &--silver {
+        background-color: $color-silver-medium-light;
+    }
+    &--brick {
+        background-color: $color-brick-medium-light;
+    }
+    &--bus {
+        background-color: $color-bus-medium-light;
+    }
+    &--copper {
+        background-color: $color-copper-medium-light;
+    }
+    &--engel {
+        background-color: $color-engel-medium-light;
+    }
+    &--fog {
+        background-color: $color-fog-medium-light;
+    }
+    &--metro {
+        background-color: $color-metro-medium-light;
+    }
+    &--summer {
+        background-color: $color-summer-medium-light;
+    }
+    &--suomenlinna {
+        background-color: $color-suomenlinna-medium-light;
+    }
+    &--tram {
+        background-color: $color-tram-medium-light;
+    }
+
+    &.color-theme-1 {
+        background-color: $color-theme-1-light;
+    }
+
+    &.color-theme-2 {
+        background-color: $color-theme-2-light;
+    }
+
+    &.color-theme-3 {
+        background-color: $color-theme-3-light;
+    }
+
+    &.color-theme-4 {
+        background-color: $color-theme-4-light;
+    }
+}
+

@@ -1,0 +1,19 @@
+.child-menu-items {
+    justify-content: center;
+
+    li {
+        margin-bottom: $spacing-s;
+
+        @include breakpoint(m) {
+            margin-right: $spacing-l;
+        }
+
+        a {
+            width: 100%;
+
+            @include breakpoint(m) {
+                width: auto;
+            }
+        }
+    }
+}

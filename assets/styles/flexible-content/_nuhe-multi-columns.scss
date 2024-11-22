@@ -1,0 +1,30 @@
+.nuhe-multi-columns {
+    .multi-columns-title {
+        margin-top: 0;
+        margin-bottom: $spacing-3-xl;
+    }
+
+    .multi-columns-item {
+        &__title {
+            margin-top: 0;
+            margin-bottom: $spacing-l;
+        }
+
+        &__content {
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding-left: 20px;
+
+                li {
+                    font-size: $fontsize-body-l;
+                }
+            }
+        }
+    }
+}

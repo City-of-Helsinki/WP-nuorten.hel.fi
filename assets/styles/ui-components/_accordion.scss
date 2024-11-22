@@ -1,0 +1,225 @@
+.nuhe-accordion {
+    .accordion {
+        &-item {
+            margin-bottom: $spacing-m;
+            padding: $spacing-m;
+            background-color: $color-black-5;
+
+            &__title {
+                margin: 0;
+            }
+
+            &__button {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                background-color: transparent;
+                border-color: transparent;
+                cursor: pointer;
+
+                &[aria-expanded=true] {
+                    .accordion-item__button-icon {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &__button-icon {
+                display: flex;
+            }
+        }
+
+        &__content {
+            display: none;
+            padding-top: $spacing-s;
+        }
+    }
+}
+
+.hds-accordion {
+    .accordion-item {
+        margin-top: 0.5rem;
+        --background-color: $color-white;
+        --border-color: $color-black-60;
+        --header-font-color: $color-black-90;
+        --header-focus-outline-color: $color-coat-of-arms;
+        --content-font-color: $color-black-90;
+        --content-font-size: $spacing-s;
+        --content-line-height: $lineheight-l;
+
+        /* Close button */
+        --close-button-background-color-disabled: inherit;
+        --close-button-background-color-focus: transparent;
+        --close-button-background-color-hover-focus: $color-black-5;
+        --close-button-background-color-hover:$color-black-5;
+        --close-button-background-color: inherit;
+        --close-button-border-color-active: var(--header-focus-outline-color);
+        --close-button-border-color-disabled: inherit;
+        --close-button-border-color-focus: var(--header-focus-outline-color);
+        --close-button-border-color-hover-focus: var(--header-focus-outline-color);
+        --close-button-border-color-hover: inherit;
+        --close-button-border-color: inherit;
+        --close-button-color-disabled: inherit;
+        --close-button-color-focus: $color-black;
+        --close-button-color-hover-focus: $color-black;
+        --close-button-color-hover: $color-black;
+        --close-button-color: var(--content-font-color);
+        --close-button-focus-outline-color: transparent;
+
+        &:not(.card) {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        &.card {
+            background-color: var(--background-color);
+            padding-left: var(--padding-horizontal);
+            padding-right: var(--padding-horizontal);
+        }
+
+        &.border {
+            border: 2px solid var(--border-color);
+        }
+
+        &__header {
+            align-items: center;
+            background-color: transparent;
+            border-color: transparent;
+            color: var(--header-font-color);
+            display: flex;
+            font-size: var(--header-font-size);
+            font-weight: var(--header-font-weight);
+            justify-content: space-between;
+            letter-spacing: var(--header-letter-spacing);
+            line-height: var(--header-line-height);
+            padding-bottom: var(--padding-vertical);
+            padding-top: var(--padding-vertical);
+            position: relative;
+            cursor: pointer;
+
+            &[aria-expanded=true] {
+                .accordion-item__button-icon {
+                    transform: rotate(180deg);
+                }
+            }
+
+            & > div {
+                flex: 1 1 auto;
+            }
+        }
+
+        &__content {
+            display: none;
+            color: var(--content-font-color);
+            font-size: var(--content-font-size);
+            line-height: var(--content-line-height);
+            padding: 0 $spacing-m;
+            position: relative;
+        }
+
+        &__close {
+            display: flex;
+            position: absolute;
+            justify-content: flex-end;
+            align-items: center;
+            right: $spacing-l;
+            cursor: pointer;
+        }
+
+        &__close-button {
+            &:not(:disabled):active {
+                border-color: var(--close-button-border-color-active);
+            }
+
+            --background-color-disabled: var(--close-button-background-color-disabled);
+            --background-color-focus: var(--close-button-background-color-focus);
+            --background-color-hover-focus: var(--close-button-background-color-hover-focus);
+            --background-color-hover: var(--close-button-background-color-hover);
+            --background-color: var(--close-button-background-color);
+            --border-color-active: var(--close-button-border-color-active);
+            --border-color-disabled: var(--close-button-border-color-disabled);
+            --border-color-focus: var(--close-button-border-color-focus);
+            --border-color-hover-focus: var(--close-button-border-color-hover-focus);
+            --border-color-hover: var(--close-button-border-color-hover);
+            --border-color: var(--close-button-border-color);
+            --color-disabled: var(--close-button-color-disabled);
+            --color-focus: var(--close-button-color-focus);
+            --color-hover-focus: var(--close-button-color-hover-focus);
+            --color-hover: var(--close-button-color-hover);
+            --color: var(--close-button-color);
+            --focus-outline-color: var(--close-button-focus-outline-color);
+        }
+        &__close-button-icon {
+            display: inline-flex;
+            margin-left: $spacing-l;
+        }
+
+        &__button-icon {
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            height: var(--button-size) !important;
+            width: var(--button-size) !important;
+        }
+
+        &__content-with-close-button {
+            padding-bottom: 2.75rem;
+        }
+
+        &__heading-container {
+            align-items: center;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: auto calc(var(--button-size));
+            width: 100%;
+            margin: 0;
+            padding: $spacing-s;
+
+            &:focus {
+                outline: 2px solid var(--header-focus-outline-color, transparent);
+            }
+        }
+    }
+
+    .s {
+        --header-font-size: $fontsize-heading-s;
+        --padding-vertical: $spacing-s;
+        --header-font-weight: 700;
+        --header-letter-spacing: 0.2px;
+        --header-line-height: 1.4;
+        --button-size: 1.75rem;
+        --padding-horizontal: $spacing-2-xs;
+
+        & .closeButton div {
+            margin-right: $spacing-4-xs;
+        }
+    }
+
+    .m {
+        --header-font-size: $fontsize-heading-m;
+        --padding-vertical: $spacing-m;
+        --header-font-weight: 500;
+        --header-letter-spacing: -0.2px;
+        --header-line-height: $spacing-l;
+        --button-size: 2.25rem;
+        --padding-horizontal: $spacing-m;
+
+        & .closeButton div {
+            margin-right: 0.375rem;
+        }
+    }
+
+    .l {
+        --header-font-size: $fontsize-heading-l;
+        --padding-vertical: $spacing-l;
+        --header-font-weight: 400;
+        --header-letter-spacing: -0.4px;
+        --header-line-height: $lineheight-s;
+        --button-size: 3.25rem;
+        --padding-horizontal: $spacing-l;
+
+        & .closeButton div {
+            margin-right: $spacing-xs;
+        }
+    }
+}

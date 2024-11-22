@@ -1,0 +1,38 @@
+.youth-council-elections {
+    &__title {
+        font-size: $fontsize-heading-m;
+
+        @include breakpoint(m) {
+            font-size: $fontsize-heading-xl;
+        }
+    }
+    &__form {
+        margin-bottom: $spacing-xl;
+
+        @include breakpoint(l) {
+            margin-bottom: $spacing-5-xl;
+        }
+    }
+
+    .form-row {
+        display: flex;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: flex-end;
+
+        &--text-input {
+            flex: 1;
+
+            @include breakpoint(s) {
+                flex: none;
+                width: 50%;
+            }
+        }
+    }
+
+    .hds-text-input {
+        width: 100%;
+    }
+}

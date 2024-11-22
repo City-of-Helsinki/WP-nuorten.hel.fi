@@ -1,0 +1,38 @@
+.nuhe-text-banner {
+    color: $color-white;
+    text-align: center;
+    background-color: $color-bus;
+    quotes: "“" "”";
+
+    &__title {
+        font-size: $fontsize-body-l;
+        font-weight: bold;
+    }
+
+    &__citation {
+        font-weight: bold;
+        line-height: $lineheight-m;
+
+        &::before {
+            content: open-quote;
+        }
+        &::after {
+            content: close-quote;
+        }
+    }
+
+    .link {
+        font-size: $fontsize-body-m;
+        justify-content: center;
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        .hds-icon {
+            margin-right: $spacing-3-xs;
+        }
+    }
+}

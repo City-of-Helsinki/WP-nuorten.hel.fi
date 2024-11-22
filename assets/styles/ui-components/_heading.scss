@@ -1,0 +1,11 @@
+.heading {
+    &--has-icon {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: $spacing-m;
+            margin-right: $spacing-xs;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.nuhe-embed {
+    .call-to-action {
+        @include breakpoint(l) {
+            margin-top: $spacing-3-xl;
+        }
+    }
+}

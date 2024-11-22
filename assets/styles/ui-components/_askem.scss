@@ -1,0 +1,91 @@
+.rns {
+    background-color: $color-grey;
+
+    &-plugin {
+        max-width: 1200px;
+        margin: 0 auto !important;
+        padding: $spacing-5-xl 0;
+
+        @media screen and (max-width: #{$breakpoint-xl}) {
+            padding: $spacing-5-xl $spacing-l;
+        }
+    }
+
+    .rns-shares.rns-highlight {
+        display: none;
+    }
+
+    .rns-input-feedback-1 {
+        max-width: 50rem;
+
+        .rns-input-field {
+            height: 150px;
+        }
+    }
+
+    &-reactions {
+        .reactions {
+            max-width: 688px;
+
+            .rns-reaction {
+                &-button {
+                    line-height: $spacing-s;
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    padding: $spacing-s $spacing-l;
+                    border-width: 3px;
+                    border-style: solid;
+                    border-color: $color-black;
+                    border-radius: 0;
+                    transition: .1s all;
+
+                    @media screen and (max-width: #{$breakpoint-m}) {
+                        justify-content: center !important;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        .rns-label::after {
+                            background-color: $color-white;
+                        }
+                    }
+
+                    .rns-label {
+                        display: flex;
+                        align-items: center;
+
+                        &::after {
+                            content: "";
+                            display: flex;
+                            width: 1.3rem;
+                            height: 1.3rem;
+                            margin-left: $spacing-s;
+                            vertical-align: bottom;
+                            background-color: $color-black;
+                            background-size: contain;
+                            mask-image: url("./images/neutral-face.png");
+                            mask-position: center;
+                            mask-repeat: no-repeat;
+                            mask-size: 1.3rem 1.3rem;
+                        }
+                    }
+                }
+                &:first-child {
+                    .rns-label::after {
+                        mask-image: url("./images/smile.png");
+                    }
+                }
+
+                &:last-child {
+                    .rns-label::after {
+                        mask-image: url("./images/sad-face.png");
+                    }
+                }
+            }
+        }
+    }
+}

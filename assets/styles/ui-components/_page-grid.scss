@@ -1,0 +1,31 @@
+.page-grid {
+    @include grid(l);
+    @include gutter();
+
+    margin-top: $spacing-layout-m;
+
+    &--has-breadcrumbs {
+        margin-top: $spacing-layout-s;
+    }
+
+    @include breakpoint(l) {
+        grid-gap: $spacing-2-xl;
+    }
+
+    &__content {
+        overflow: hidden;
+        grid-column: span 4;
+
+        @include breakpoint(m) {
+            grid-column: span 6;
+        }
+
+        @include breakpoint(l) {
+            grid-column: span 8;
+        }
+    }
+
+    &__sidebar {
+        grid-column: span 4;
+    }
+}

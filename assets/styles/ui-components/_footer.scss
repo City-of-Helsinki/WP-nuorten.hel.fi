@@ -1,0 +1,55 @@
+.site-footer {
+    position: relative;
+    margin-top: auto; // needed for sticky footer.
+    background-color: $color-fog-medium-light;
+
+    .koro {
+        position: relative;
+        top: -30px;
+    }
+
+    // Hide when mobile menu is open.
+    .is-menu-open & {
+        display: none;
+    }    
+
+    &__sitemap {
+        padding: $spacing-m 0 $spacing-2-xl;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        padding: $spacing-layout-xs 0;
+        border-top: .0625rem solid $color-white;
+        border-bottom: .0625rem solid $color-white;
+    }
+
+    &__link {
+        color: $color-black;
+        text-decoration: none;
+    }
+
+    &__sub-bar {
+        padding: $spacing-layout-2-xs 0;    
+
+        @include breakpoint(s) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__sub-bar-links {
+        margin-left: auto;
+    }
+
+    &__sub-bar-link {
+        color: $color-black;
+    }
+
+    &.text-white {
+        * {
+            color: $color-white;
+        }
+    }
+}

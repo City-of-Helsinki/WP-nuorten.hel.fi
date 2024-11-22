@@ -1,0 +1,40 @@
+.people-list-item {
+
+    &__inner-container {
+        padding-bottom: $spacing-l;
+    }
+
+    &__name {
+        margin-top: 0;
+    }
+
+    &__title {
+        font-size: $fontsize-body-xl;
+        font-weight: 700;
+    }
+
+    .link {
+        font-weight: 700;
+        color: $color-black;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        .hds-icon {
+            margin-right: 0;
+        }
+    }
+
+    .img-container {
+        max-width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 100%;
+
+        &::before {
+            padding-bottom: 100%;
+        }
+    }
+}

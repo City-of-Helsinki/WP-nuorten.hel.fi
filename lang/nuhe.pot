@@ -1,0 +1,1403 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Nuhe\n"
+"POT-Creation-Date: 2024-02-26 08:15+0200\n"
+"PO-Revision-Date: 2022-10-20 15:04+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: frontpage.php:41
+msgid "Carousel navigation"
+msgstr ""
+
+#: frontpage.php:45
+msgid "Previous"
+msgstr ""
+
+#: frontpage.php:57
+msgid "Next"
+msgstr ""
+
+#: frontpage.php:99 page-templates/page-category-landing.php:70
+#: page-templates/page-initiatives.php:68 page-templates/page-theme.php:84
+#: page.php:41 single-unit.php:62 single.php:50
+msgid "More related content"
+msgstr ""
+
+#: lib/ACF/Attachment.php:13
+msgctxt "theme ACF"
+msgid "Attachment"
+msgstr ""
+
+#: lib/ACF/ExcludeFromSitemap.php:15
+msgctxt "theme ACF"
+msgid "Sivukartta"
+msgstr ""
+
+#: lib/ACF/Expirator.php:14
+msgctxt "theme ACF"
+msgid "Ajastettu poisto"
+msgstr ""
+
+#: lib/ACF/HidePublishDate.php:14
+msgctxt "theme ACF"
+msgid "Piilota julkaisupäivämäärä"
+msgstr ""
+
+#: lib/ACF/PageCategoryLandingHero.php:14 lib/ACF/PageFront.php:138
+#: lib/ACF/PageThemeHero.php:14 lib/ACF/PageVolunteeringHero.php:14
+#: lib/ACF/SingleSchool.php:48 lib/ACF/SingleYouthCenter.php:50
+msgctxt "theme ACF"
+msgid "Heroalueen kentät"
+msgstr ""
+
+#: lib/ACF/PageFront.php:38
+msgctxt "theme ACF"
+msgid "Kuvakarusellin kentät"
+msgstr ""
+
+#: lib/ACF/PageFront.php:241
+msgctxt "theme ACF"
+msgid "Sisältöosiot"
+msgstr ""
+
+#: lib/ACF/PageModules.php:75
+msgctxt "theme ACF"
+msgid "Vapaat nostot"
+msgstr ""
+
+#: lib/ACF/PageSidebar.php:66
+msgctxt "theme ACF"
+msgid "Oikea palsta"
+msgstr ""
+
+#: lib/ACF/Settings.php:19
+msgctxt "theme ACF"
+msgid "Site settings"
+msgstr ""
+
+#: lib/ACF/Settings.php:523
+msgid "Articles"
+msgstr ""
+
+#: lib/ACF/Settings.php:524
+msgid "Pages"
+msgstr ""
+
+#: lib/ACF/Settings.php:525 lib/Traits/Breadcrumbs.php:127
+msgid "Youth centers"
+msgstr ""
+
+#: lib/ACF/Settings.php:526 lib/Traits/Breadcrumbs.php:130
+msgid "High schools"
+msgstr ""
+
+#: lib/ACF/Settings.php:527 lib/Traits/Breadcrumbs.php:133
+msgid "Vocational schools"
+msgstr ""
+
+#: lib/ACF/Settings.php:528 lib/Traits/Breadcrumbs.php:43
+msgid "Events"
+msgstr ""
+
+#: lib/ACF/Settings.php:529
+msgid "Courses"
+msgstr ""
+
+#: lib/ACF/SingleSchool.php:257 lib/ACF/SingleYouthCenter.php:271
+msgid "Youth center intro title"
+msgstr ""
+
+#: lib/ACF/SingleYouthCenter.php:347
+msgid "Youth center instructors title"
+msgstr ""
+
+#: lib/ACF/SingleYouthCenter.php:449
+msgid "Youth center opening hours title"
+msgstr ""
+
+#: lib/ACF/UnitSearch.php:15
+msgctxt "theme ACF"
+msgid "Yksikön tyyppi"
+msgstr ""
+
+#: lib/ACF/YouthCenterRelationship.php:18
+msgctxt "theme ACF"
+msgid "Artikkeliin liittyvät nuorisotalot"
+msgstr ""
+
+#: lib/BlocksController.php:212
+msgid "updated"
+msgstr ""
+
+#: lib/GravityForms.php:74
+msgid "Form Basics"
+msgstr ""
+
+#: lib/Integrations/HelbitRekry/JobAdvertisement.php:209
+#: lib/Integrations/LinkedEvents/Entities/Event.php:188
+#: lib/Integrations/LinkedEvents/Entities/Event.php:199
+msgid "at"
+msgstr ""
+
+#: lib/Integrations/LinkedEvents/Entities/Event.php:157
+msgid "Mon"
+msgstr ""
+
+#: lib/Integrations/LinkedEvents/Entities/Event.php:158
+msgid "Tue"
+msgstr ""
+
+#: lib/Integrations/LinkedEvents/Entities/Event.php:159
+msgid "Wed"
+msgstr ""
+
+#: lib/Integrations/LinkedEvents/Entities/Event.php:160
+msgid "Thu"
+msgstr ""
+
+#: lib/Integrations/LinkedEvents/Entities/Event.php:161
+msgid "Fri"
+msgstr ""
+
+#: lib/Integrations/LinkedEvents/Entities/Event.php:162
+msgid "Sat"
+msgstr ""
+
+#: lib/Integrations/LinkedEvents/Entities/Event.php:163
+msgid "Sun"
+msgstr ""
+
+#: lib/Integrations/Respa/Entities/Space.php:69
+msgid "Free of charge"
+msgstr ""
+
+#: lib/Localization.php:167
+msgctxt "theme-frontend"
+msgid "Skip to content"
+msgstr ""
+
+#: lib/Localization.php:168
+msgctxt "theme-frontend"
+msgid "Main navigation"
+msgstr ""
+
+#: lib/Localization.php:169
+msgctxt "theme-frontend"
+msgid "Search"
+msgstr ""
+
+#: lib/Localization.php:172
+msgctxt "theme-frontend"
+msgid "Page not found"
+msgstr ""
+
+#: lib/Localization.php:174
+msgctxt "theme-frontend"
+msgid "The content were looking for was not found"
+msgstr ""
+
+#: lib/Localization.php:178
+msgctxt "theme-frontend"
+msgid "To home page"
+msgstr ""
+
+#: lib/Model/PageEvent.php:118 lib/Model/PageEvent.php:234
+#: partials/views/event/event-not-found.php:12
+msgid "Event not found"
+msgstr ""
+
+#: lib/Model/PageTheme.php:85 lib/Model/PageVolunteering.php:84
+msgid "Important links"
+msgstr ""
+
+#. translators:
+#: lib/Model/Search.php:120
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: lib/Model/Search.php:136
+msgid "results by filter"
+msgstr ""
+
+#: lib/Model/Search.php:147
+msgctxt "youth center in search results"
+msgid "youth center"
+msgstr ""
+
+#: lib/Model/Search.php:148
+msgctxt "youth centers in search results"
+msgid "youth centers"
+msgstr ""
+
+#: lib/Model/Search.php:151
+msgctxt "page in search results"
+msgid "page"
+msgstr ""
+
+#: lib/Model/Search.php:152
+msgctxt "pages in search results"
+msgid "pages"
+msgstr ""
+
+#: lib/Model/Search.php:155
+msgctxt "article in search results"
+msgid "article"
+msgstr ""
+
+#: lib/Model/Search.php:156
+msgctxt "articles in search results"
+msgid "articles"
+msgstr ""
+
+#: lib/Model/Search.php:159
+msgctxt "high school in search results"
+msgid "high school"
+msgstr ""
+
+#: lib/Model/Search.php:160
+msgctxt "high schools in search results"
+msgid "high schools"
+msgstr ""
+
+#: lib/Model/Search.php:163
+msgctxt "vocational school in search results"
+msgid "vocational school"
+msgstr ""
+
+#: lib/Model/Search.php:164
+msgctxt "vocational schools in search results"
+msgid "vocational schools"
+msgstr ""
+
+#: lib/Model/Search.php:167
+msgctxt "event in search results"
+msgid "event"
+msgstr ""
+
+#: lib/Model/Search.php:168
+msgctxt "events in search results"
+msgid "events"
+msgstr ""
+
+#: lib/Model/Search.php:171
+msgctxt "course in search results"
+msgid "course"
+msgstr ""
+
+#: lib/Model/Search.php:172
+msgctxt "courses in search results"
+msgid "courses"
+msgstr ""
+
+#: lib/Model/Search.php:175 page-templates/page-youth-council-elections.php:10
+msgctxt "search result"
+msgid "search result"
+msgstr ""
+
+#: lib/Model/Search.php:176 page-templates/page-youth-council-elections.php:11
+msgctxt "search results"
+msgid "search results"
+msgstr ""
+
+#: lib/Model/Search.php:209 lib/Model/UnitSearch.php:115
+msgid "All"
+msgstr ""
+
+#. translators:
+#: lib/Model/Search.php:517
+#, php-format
+msgid "Your search \"%1$s\" returned %2$s %3$s"
+msgstr ""
+
+#: lib/Model/SingleInitiative.php:67 lib/PostType/Initiative.php:88
+#: partials/initiative-list-item.php:44
+msgctxt "theme CPT Singular Name"
+msgid "Initiative"
+msgstr ""
+
+#: lib/Model/SingleUnit.php:272
+msgid "HSL Journey Planner"
+msgstr ""
+
+#: lib/Model/SingleUnit.php:279
+msgid "Google maps"
+msgstr ""
+
+#: lib/Model/SingleUnit.php:470
+msgid "School website"
+msgstr ""
+
+#: lib/Model/Tag.php:110 tag.php:27
+msgid "Keyword"
+msgstr ""
+
+#: lib/Model/UnitSearch.php:227
+msgid "Show as list"
+msgstr ""
+
+#: lib/Model/UnitSearch.php:239
+msgid "Show on map"
+msgstr ""
+
+#: lib/PostType/Example.php:62 lib/PostType/Settings.php:62
+msgctxt "theme CPT"
+msgid "CPT Description"
+msgstr ""
+
+#: lib/PostType/Example.php:81
+msgctxt "theme CPT General Name"
+msgid "Post Types"
+msgstr ""
+
+#: lib/PostType/Example.php:82
+msgctxt "theme CPT Singular Name"
+msgid "Post Type"
+msgstr ""
+
+#: lib/PostType/Example.php:83
+msgctxt "theme CPT"
+msgid "Post Types"
+msgstr ""
+
+#: lib/PostType/Example.php:84
+msgctxt "theme CPT"
+msgid "Post Type"
+msgstr ""
+
+#: lib/PostType/Example.php:85
+msgctxt "theme CPT"
+msgid "Item Archives"
+msgstr ""
+
+#: lib/PostType/Example.php:86
+msgctxt "theme CPT"
+msgid "Item Attributes"
+msgstr ""
+
+#: lib/PostType/Example.php:87
+msgctxt "theme CPT"
+msgid "Parent Item:"
+msgstr ""
+
+#: lib/PostType/Example.php:88
+msgctxt "theme CPT"
+msgid "All Items"
+msgstr ""
+
+#: lib/PostType/Example.php:89
+msgctxt "theme CPT"
+msgid "Add New Item"
+msgstr ""
+
+#: lib/PostType/Example.php:90
+msgctxt "theme CPT"
+msgid "Add New"
+msgstr ""
+
+#: lib/PostType/Example.php:91 lib/PostType/HighSchool.php:90
+#: lib/PostType/Initiative.php:97 lib/PostType/Instructor.php:89
+#: lib/PostType/VocationalSchool.php:90 lib/PostType/YouthCenter.php:90
+msgctxt "theme CPT"
+msgid "New Item"
+msgstr ""
+
+#: lib/PostType/Example.php:92 lib/PostType/HighSchool.php:91
+#: lib/PostType/Initiative.php:98 lib/PostType/Instructor.php:90
+#: lib/PostType/VocationalSchool.php:91 lib/PostType/YouthCenter.php:91
+msgctxt "theme CPT"
+msgid "Edit Item"
+msgstr ""
+
+#: lib/PostType/Example.php:93 lib/PostType/HighSchool.php:92
+#: lib/PostType/Initiative.php:99 lib/PostType/Instructor.php:91
+#: lib/PostType/VocationalSchool.php:92 lib/PostType/YouthCenter.php:92
+msgctxt "theme CPT"
+msgid "Update Item"
+msgstr ""
+
+#: lib/PostType/Example.php:94
+msgctxt "theme CPT"
+msgid "View Item"
+msgstr ""
+
+#: lib/PostType/Example.php:95 lib/PostType/HighSchool.php:94
+#: lib/PostType/Initiative.php:101 lib/PostType/Instructor.php:93
+#: lib/PostType/VocationalSchool.php:94 lib/PostType/YouthCenter.php:94
+msgctxt "theme CPT"
+msgid "View Items"
+msgstr ""
+
+#: lib/PostType/Example.php:96 lib/PostType/HighSchool.php:95
+#: lib/PostType/Initiative.php:102 lib/PostType/Instructor.php:94
+#: lib/PostType/VocationalSchool.php:95 lib/PostType/YouthCenter.php:95
+msgctxt "theme CPT"
+msgid "Search Item"
+msgstr ""
+
+#: lib/PostType/Example.php:97 lib/PostType/HighSchool.php:96
+#: lib/PostType/Initiative.php:103 lib/PostType/Instructor.php:95
+#: lib/PostType/VocationalSchool.php:96 lib/PostType/YouthCenter.php:96
+msgctxt "theme CPT"
+msgid "Not found"
+msgstr ""
+
+#: lib/PostType/Example.php:98 lib/PostType/HighSchool.php:97
+#: lib/PostType/Initiative.php:104 lib/PostType/Instructor.php:96
+#: lib/PostType/VocationalSchool.php:97 lib/PostType/YouthCenter.php:97
+msgctxt "theme CPT"
+msgid "Not found in Trash"
+msgstr ""
+
+#: lib/PostType/Example.php:99
+msgctxt "theme CPT"
+msgid "Featured Image"
+msgstr ""
+
+#: lib/PostType/Example.php:100 lib/PostType/HighSchool.php:99
+#: lib/PostType/Initiative.php:106 lib/PostType/Instructor.php:98
+#: lib/PostType/VocationalSchool.php:99 lib/PostType/YouthCenter.php:99
+msgctxt "theme CPT"
+msgid "Set featured image"
+msgstr ""
+
+#: lib/PostType/Example.php:101 lib/PostType/HighSchool.php:100
+#: lib/PostType/Initiative.php:107 lib/PostType/Instructor.php:99
+#: lib/PostType/VocationalSchool.php:100 lib/PostType/YouthCenter.php:100
+msgctxt "theme CPT"
+msgid "Remove featured image"
+msgstr ""
+
+#: lib/PostType/Example.php:102 lib/PostType/HighSchool.php:101
+#: lib/PostType/Initiative.php:108 lib/PostType/Instructor.php:100
+#: lib/PostType/VocationalSchool.php:101 lib/PostType/YouthCenter.php:101
+msgctxt "theme CPT"
+msgid "Use as featured image"
+msgstr ""
+
+#: lib/PostType/Example.php:103 lib/PostType/HighSchool.php:102
+#: lib/PostType/Initiative.php:109 lib/PostType/Instructor.php:101
+#: lib/PostType/VocationalSchool.php:102 lib/PostType/YouthCenter.php:102
+msgctxt "theme CPT"
+msgid "Insert into item"
+msgstr ""
+
+#: lib/PostType/Example.php:104 lib/PostType/HighSchool.php:103
+#: lib/PostType/Initiative.php:110 lib/PostType/Instructor.php:102
+#: lib/PostType/VocationalSchool.php:103 lib/PostType/YouthCenter.php:103
+msgctxt "theme CPT"
+msgid "Uploaded to this item"
+msgstr ""
+
+#: lib/PostType/Example.php:105 lib/PostType/HighSchool.php:104
+#: lib/PostType/Initiative.php:111 lib/PostType/Instructor.php:103
+#: lib/PostType/VocationalSchool.php:104 lib/PostType/YouthCenter.php:104
+msgctxt "theme CPT"
+msgid "Items list"
+msgstr ""
+
+#: lib/PostType/Example.php:106 lib/PostType/HighSchool.php:105
+#: lib/PostType/Initiative.php:112 lib/PostType/Instructor.php:104
+#: lib/PostType/VocationalSchool.php:105 lib/PostType/YouthCenter.php:105
+msgctxt "theme CPT"
+msgid "Items list navigation"
+msgstr ""
+
+#: lib/PostType/Example.php:107 lib/PostType/HighSchool.php:106
+#: lib/PostType/Initiative.php:113 lib/PostType/Instructor.php:105
+#: lib/PostType/VocationalSchool.php:106 lib/PostType/YouthCenter.php:106
+msgctxt "theme CPT"
+msgid "Filter items list"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:59 lib/PostType/HighSchool.php:83
+msgctxt "theme CPT"
+msgid "Lukio"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:80 lib/PostType/HighSchool.php:82
+msgctxt "theme CPT"
+msgid "Lukiot"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:81
+msgctxt "theme CPT Singular Name"
+msgid "Lukio"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:84
+msgctxt "theme CPT"
+msgid "Lukioiden arkistot"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:85
+msgctxt "theme CPT"
+msgid "Lukion ominaisuudet"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:86 lib/PostType/Initiative.php:93
+#: lib/PostType/Instructor.php:85 lib/PostType/VocationalSchool.php:86
+#: lib/PostType/YouthCenter.php:86
+msgctxt "theme CPT"
+msgid "Yläsivu:"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:87
+msgctxt "theme CPT"
+msgid "Kaikki lukiot"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:88
+msgctxt "theme CPT"
+msgid "Lisää uusi lukio"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:89 lib/PostType/Initiative.php:96
+#: lib/PostType/Instructor.php:88 lib/PostType/VocationalSchool.php:89
+#: lib/PostType/YouthCenter.php:89
+msgctxt "theme CPT"
+msgid "Lisää uusi"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:93
+msgctxt "theme CPT"
+msgid "Näytä lukio"
+msgstr ""
+
+#: lib/PostType/HighSchool.php:98 lib/PostType/Initiative.php:105
+#: lib/PostType/VocationalSchool.php:98 lib/PostType/YouthCenter.php:98
+msgctxt "theme CPT"
+msgid "Artikkelikuva"
+msgstr ""
+
+#: lib/PostType/Initiative.php:67 lib/PostType/Initiative.php:90
+msgctxt "theme CPT"
+msgid "Aloite"
+msgstr ""
+
+#: lib/PostType/Initiative.php:87
+msgctxt "theme CPT"
+msgid "Initiatives"
+msgstr ""
+
+#: lib/PostType/Initiative.php:89
+msgctxt "theme CPT"
+msgid "Aloitteet"
+msgstr ""
+
+#: lib/PostType/Initiative.php:91
+msgctxt "theme CPT"
+msgid "Aloitteiden arkistot"
+msgstr ""
+
+#: lib/PostType/Initiative.php:92
+msgctxt "theme CPT"
+msgid "Aloitteen ominaisuudet"
+msgstr ""
+
+#: lib/PostType/Initiative.php:94
+msgctxt "theme CPT"
+msgid "All initiatives"
+msgstr ""
+
+#: lib/PostType/Initiative.php:95
+msgctxt "theme CPT"
+msgid "Lisää uusi aloite"
+msgstr ""
+
+#: lib/PostType/Initiative.php:100
+msgctxt "theme CPT"
+msgid "Näytä aloite"
+msgstr ""
+
+#: lib/PostType/Instructor.php:59 lib/PostType/Instructor.php:82
+msgctxt "theme CPT"
+msgid "Ohjaaja"
+msgstr ""
+
+#: lib/PostType/Instructor.php:79
+msgctxt "theme CPT General Name"
+msgid "Ohjaajat"
+msgstr ""
+
+#: lib/PostType/Instructor.php:80
+msgctxt "theme CPT Singular Name"
+msgid "Ohjaaja"
+msgstr ""
+
+#: lib/PostType/Instructor.php:81
+msgctxt "theme CPT"
+msgid "Ohjaajat"
+msgstr ""
+
+#: lib/PostType/Instructor.php:83
+msgctxt "theme CPT"
+msgid "Ohjaajajen arkistot"
+msgstr ""
+
+#: lib/PostType/Instructor.php:84
+msgctxt "theme CPT"
+msgid "Ohjaajan ominaisuudet"
+msgstr ""
+
+#: lib/PostType/Instructor.php:86
+msgctxt "theme CPT"
+msgid "Kaikki Ohjaajat"
+msgstr ""
+
+#: lib/PostType/Instructor.php:87
+msgctxt "theme CPT"
+msgid "Lisää uusi Ohjaaja"
+msgstr ""
+
+#: lib/PostType/Instructor.php:92
+msgctxt "theme CPT"
+msgid "Näytä Ohjaaja"
+msgstr ""
+
+#: lib/PostType/Instructor.php:97
+msgctxt "theme CPT"
+msgid "Ohjaajan kuva"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:59 lib/PostType/VocationalSchool.php:83
+msgctxt "theme CPT"
+msgid "Ammattioppilaitos"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:80 lib/PostType/VocationalSchool.php:82
+msgctxt "theme CPT"
+msgid "Ammattioppilaitokset"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:81
+msgctxt "theme CPT Singular Name"
+msgid "Ammattioppilaitos"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:84
+msgctxt "theme CPT"
+msgid "Ammattioppilaitosten arkistot"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:85
+msgctxt "theme CPT"
+msgid "Ammattioppilaitoksen ominaisuudet"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:87
+msgctxt "theme CPT"
+msgid "Kaikki ammattioppilaitokset"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:88
+msgctxt "theme CPT"
+msgid "Lisää uusi ammattioppilaitos"
+msgstr ""
+
+#: lib/PostType/VocationalSchool.php:93
+msgctxt "theme CPT"
+msgid "Näytä ammattioppilaitos"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:59 lib/PostType/YouthCenter.php:83
+msgctxt "theme CPT"
+msgid "Nuorisotalo"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:80 lib/PostType/YouthCenter.php:82
+msgctxt "theme CPT"
+msgid "Nuorisotalot"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:81
+msgctxt "theme CPT Singular Name"
+msgid "Nuorisotalo"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:84
+msgctxt "theme CPT"
+msgid "Nuorisotalojen arkistot"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:85
+msgctxt "theme CPT"
+msgid "Nuorisotalon ominaisuudet"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:87
+msgctxt "theme CPT"
+msgid "Kaikki nuorisotalot"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:88
+msgctxt "theme CPT"
+msgid "Lisää uusi nuorisotalo"
+msgstr ""
+
+#: lib/PostType/YouthCenter.php:93
+msgctxt "theme CPT"
+msgid "Näytä nuorisotalo"
+msgstr ""
+
+#: lib/PostType/YouthCouncilElections.php:60
+msgctxt "theme CPT"
+msgid "Nuorisoneuvoston vaalit"
+msgstr ""
+
+#: lib/Rewrites.php:39
+msgctxt "pagination base to show in url"
+msgid "page"
+msgstr ""
+
+#: lib/Rewrites.php:48
+msgctxt "search base to show in url"
+msgid "search"
+msgstr ""
+
+#: lib/Roles.php:316
+msgid "HEL Admin"
+msgstr ""
+
+#: lib/Roles.php:367
+msgid "HEL Editor"
+msgstr ""
+
+#: lib/Roles.php:408
+msgid "HEL Contributor"
+msgstr ""
+
+#: lib/Roles.php:451
+msgid "HEL Trainee"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:58
+msgctxt "theme TAX General Name"
+msgid "Nuorisotalot"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:59
+msgctxt "theme TAX Singular Name"
+msgid "Nuorisotalo"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:60
+msgctxt "theme TAX"
+msgid "Nuorisotalot"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:61
+msgctxt "theme TAX"
+msgid "Kaikki nuorisotalot"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:62 lib/Taxonomy/Example.php:65
+msgctxt "theme TAX"
+msgid "Parent Item"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:63 lib/Taxonomy/Example.php:66
+msgctxt "theme TAX"
+msgid "Parent Item:"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:64 lib/Taxonomy/Example.php:67
+msgctxt "theme TAX"
+msgid "New Item Name"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:65
+msgctxt "theme TAX"
+msgid "Lisää nuorisotalo"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:66
+msgctxt "theme TAX"
+msgid "Muokkaa nuorisotaloa"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:67
+msgctxt "theme TAX"
+msgid "Päivitä nuorisotaloa"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:68
+msgctxt "theme TAX"
+msgid "Näytä nuorisotalo"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:69 lib/Taxonomy/Example.php:72
+msgctxt "theme TAX"
+msgid "Separate items with commas"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:70 lib/Taxonomy/Example.php:73
+msgctxt "theme TAX"
+msgid "Add or remove items"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:71 lib/Taxonomy/Example.php:74
+msgctxt "theme TAX"
+msgid "Choose from the most used"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:72 lib/Taxonomy/Example.php:75
+msgctxt "theme TAX"
+msgid "Popular Items"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:73 lib/Taxonomy/Example.php:76
+msgctxt "theme TAX"
+msgid "Search Items"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:74 lib/Taxonomy/Example.php:77
+msgctxt "theme TAX"
+msgid "Not Found"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:75 lib/Taxonomy/Example.php:78
+msgctxt "theme TAX"
+msgid "No items"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:76 lib/Taxonomy/Example.php:79
+msgctxt "theme TAX"
+msgid "Items list"
+msgstr ""
+
+#: lib/Taxonomy/CommunityCenter.php:77 lib/Taxonomy/Example.php:80
+msgctxt "theme TAX"
+msgid "Items list navigation"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:61
+msgctxt "theme TAX General Name"
+msgid "Taxonomies"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:62
+msgctxt "theme TAX Singular Name"
+msgid "Taxonomy"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:63
+msgctxt "theme TAX"
+msgid "Taxonomy"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:64
+msgctxt "theme TAX"
+msgid "All Items"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:68
+msgctxt "theme TAX"
+msgid "Add New Item"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:69
+msgctxt "theme TAX"
+msgid "Edit Item"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:70
+msgctxt "theme TAX"
+msgid "Update Item"
+msgstr ""
+
+#: lib/Taxonomy/Example.php:71
+msgctxt "theme TAX"
+msgid "View Item"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:54
+msgctxt "theme TAX General Name"
+msgid "Place tags"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:55
+msgctxt "theme TAX Singular Name"
+msgid "Place tag"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:56
+msgctxt "theme TAX"
+msgid "Place tags"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:57
+msgctxt "theme TAX"
+msgid "All place tags"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:58
+msgctxt "theme TAX"
+msgid "Add place tag"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:59
+msgctxt "theme TAX"
+msgid "Modify place tag"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:60
+msgctxt "theme TAX"
+msgid "Update place tag"
+msgstr ""
+
+#: lib/Taxonomy/PlaceTagTax.php:61
+msgctxt "theme TAX"
+msgid "Show place tag"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:54
+msgctxt "theme TAX General Name"
+msgid "Oppilaitoksen hakusanat"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:55
+msgctxt "theme TAX Singular Name"
+msgid "Oppilaitoksen hakusana"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:56
+msgctxt "theme TAX"
+msgid "Oppilaitoksen hakusanat"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:57
+msgctxt "theme TAX"
+msgid "Kaikki oppilaitoksen hakusanat"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:58
+msgctxt "theme TAX"
+msgid "Lisää oppilaitoksen hakusana"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:59
+msgctxt "theme TAX"
+msgid "Muokkaa oppilaitoksen hakusanaa"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:60
+msgctxt "theme TAX"
+msgid "Päivitä oppilaitoksen hakusana"
+msgstr ""
+
+#: lib/Taxonomy/SchoolKeyword.php:61
+msgctxt "theme TAX"
+msgid "Näytä oppilaitoksen hakusana"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:54
+msgctxt "theme TAX General Name"
+msgid "Tyypit"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:55
+msgctxt "theme TAX Singular Name"
+msgid "Tyyppi"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:56
+msgctxt "theme TAX"
+msgid "Tyypit"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:57
+msgctxt "theme TAX"
+msgid "Kaikki tyypit"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:58
+msgctxt "theme TAX"
+msgid "Lisää tyyppi"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:59
+msgctxt "theme TAX"
+msgid "Muokkaa tyyppiä"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:60
+msgctxt "theme TAX"
+msgid "Päivitä tyyppi"
+msgstr ""
+
+#: lib/Taxonomy/TypeTax.php:61
+msgctxt "theme TAX"
+msgid "Näytä tyyppi"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:54
+msgctxt "theme TAX General Name"
+msgid "Hakusanat"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:55
+msgctxt "theme TAX Singular Name"
+msgid "Hakusana"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:56
+msgctxt "theme TAX"
+msgid "Hakusanat"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:57
+msgctxt "theme TAX"
+msgid "Kaikki hakusanat"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:58
+msgctxt "theme TAX"
+msgid "Lisää hakusana"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:59
+msgctxt "theme TAX"
+msgid "Muokkaa hakusanaa"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:60
+msgctxt "theme TAX"
+msgid "Päivitä hakusana"
+msgstr ""
+
+#: lib/Taxonomy/YouthCenterKeyword.php:61
+msgctxt "theme TAX"
+msgid "Näytä hakusana"
+msgstr ""
+
+#: lib/ThemeSupports.php:61
+msgid "Primary Navigation"
+msgstr ""
+
+#: lib/Traits/Initiative.php:46
+msgctxt "initiative status"
+msgid "Received"
+msgstr ""
+
+#: lib/Traits/Initiative.php:47
+msgctxt "initiative status"
+msgid "In process"
+msgstr ""
+
+#: lib/Traits/Initiative.php:48
+msgctxt "initiative status"
+msgid "Processed"
+msgstr ""
+
+#: lib/Traits/Initiative.php:49
+msgctxt "initiative status"
+msgid "Archived"
+msgstr ""
+
+#: lib/Traits/Initiative.php:50
+msgctxt "initiative status"
+msgid "Rejected"
+msgstr ""
+
+#: lib/Traits/SocialMediaShare.php:31
+msgctxt "socialmediashare"
+msgid "Copy link address"
+msgstr ""
+
+#: lib/Traits/SocialMediaShare.php:37
+msgctxt "socialmediashare"
+msgid "Share on Facebook - Opens in a new tab."
+msgstr ""
+
+#: lib/Traits/SocialMediaShare.php:43
+msgctxt "socialmediashare"
+msgid "Share on Twitter - Opens in a new tab."
+msgstr ""
+
+#: lib/Traits/SocialMediaShare.php:49
+msgctxt "socialmediashare"
+msgid "Share on LinkedIn - Opens in a new tab"
+msgstr ""
+
+#: page-templates/page-category-landing.php:37
+#: page-templates/page-initiatives.php:60 page-templates/page-theme.php:56
+#: page.php:37 single.php:46
+msgid "Related content"
+msgstr ""
+
+#: page-templates/page-event.php:46
+msgid "Related events"
+msgstr ""
+
+#: page-templates/page-events-collection.php:13
+msgid "Share collection"
+msgstr ""
+
+#: page-templates/page-events-collection.php:145
+#: partials/views/event/event-header.php:91
+#: partials/views/event/event-item.php:83
+msgid "Free"
+msgstr ""
+
+#: page-templates/page-events-collection.php:198
+#: partials/slider-front-page.php:31
+msgid "Read more"
+msgstr ""
+
+#: page-templates/page-events-collection.php:220
+#: partials/views/search/results-grid.php:45
+msgid "Show more"
+msgstr ""
+
+#: page-templates/page-helbit-jobs.php:54
+#, php-format
+msgid "(%d vacancy)"
+msgid_plural "(%d vacancies)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: page-templates/page-helbit-jobs.php:99
+msgid "Employment contract"
+msgstr ""
+
+#: page-templates/page-helbit-jobs.php:108
+msgid "Application ends"
+msgstr ""
+
+#: page-templates/page-helbit-jobs.php:120
+msgid "Workplace address"
+msgstr ""
+
+#: page-templates/page-helbit-jobs.php:138
+msgid "Apply"
+msgstr ""
+
+#: page-templates/page-unit-search.php:37 search.php:31
+msgid "Search term"
+msgstr ""
+
+#: page-templates/page-unit-search.php:49
+#: page-templates/page-youth-council-elections.php:53 partials/header.php:35
+#: partials/header.php:48 partials/header.php:116 partials/searchfield.php:75
+#: search.php:52
+msgid "Search"
+msgstr ""
+
+#: page-templates/page-unit-search.php:60
+#: page-templates/page-unit-search.php:65
+#: partials/views/unit/unit-opening-hours.php:57
+msgid "Show keywords"
+msgstr ""
+
+#: page-templates/page-unit-search.php:71 search.php:66
+msgid "Filter results"
+msgstr ""
+
+#. translators: search results.
+#: page-templates/page-unit-search.php:98
+#, php-format
+msgid "%s place"
+msgid_plural "%s places"
+msgstr[0] ""
+msgstr[1] ""
+
+#: page-templates/page-youth-council-elections.php:40
+msgid "Find a candidate based on their name or postcode"
+msgstr ""
+
+#. translators:
+#: page-templates/page-youth-council-elections.php:69
+#, php-format
+msgid "%1$s %2$s"
+msgstr ""
+
+#: partials/footer.php:47
+msgid "Scroll to top"
+msgstr ""
+
+#: partials/header.php:62 partials/header.php:136
+msgid "Change language"
+msgstr ""
+
+#: partials/header.php:71
+msgid "Switch language"
+msgstr ""
+
+#: partials/header.php:101 partials/menu.php:8
+msgid "Menu"
+msgstr ""
+
+#: partials/header.php:128
+msgid "Primary"
+msgstr ""
+
+#: partials/layouts/some_embed.php:22
+msgid "Nuorten Helsingin sosiaalisen median tilisyöte"
+msgstr ""
+
+#: partials/layouts/some_embed.php:26
+msgid "Ohita upotus"
+msgstr ""
+
+#: partials/link.php:60
+msgid "Opens in new tab"
+msgstr ""
+
+#: partials/notification.php:65
+msgid "Close"
+msgstr ""
+
+#: partials/social-media-share.php:46
+msgctxt "socialmediashare"
+msgid "Link copied into clipboard"
+msgstr ""
+
+#: partials/views/event/event-content.php:26
+msgid "Description"
+msgstr ""
+
+#: partials/views/event/event-content.php:36
+msgid "Date and time"
+msgstr ""
+
+#: partials/views/event/event-content.php:47
+#: partials/views/unit/unit-location-data.php:25
+msgid "Location"
+msgstr ""
+
+#: partials/views/event/event-content.php:70
+msgid "Open map"
+msgstr ""
+
+#: partials/views/event/event-content.php:83
+msgid "Other information"
+msgstr ""
+
+#: partials/views/event/event-content.php:96
+msgid "Website"
+msgstr ""
+
+#: partials/views/event/event-content.php:110
+msgid "Directions"
+msgstr ""
+
+#: partials/views/event/event-content.php:118
+msgid "Directions (HSL)"
+msgstr ""
+
+#: partials/views/event/event-content.php:124
+msgid "Directions (Google)"
+msgstr ""
+
+#: partials/views/event/event-not-found.php:20
+msgid "We can't seem to find the event you are looking for."
+msgstr ""
+
+#: partials/views/event/ticket-link.php:32
+msgid "Sign up"
+msgstr ""
+
+#: partials/views/event/ticket-link.php:32
+msgid "Buy tickets"
+msgstr ""
+
+#: partials/views/search/results.php:41 partials/views/search/results.php:42
+msgid "No search results"
+msgstr ""
+
+#: partials/views/unit-search/unit-search-no-results.php:2
+#: partials/views/youth-council-elections/youth-council-elections-no-results.php:2
+msgid "No results"
+msgstr ""
+
+#: partials/views/unit/unit-instructors.php:34
+msgid "Youth center phone number"
+msgstr ""
+
+#: partials/views/unit/unit-location-data.php:33
+msgid "Open map in new tab"
+msgstr ""
+
+#: partials/views/unit/unit-location-data.php:51
+msgid "Visiting address"
+msgstr ""
+
+#: partials/views/unit/unit-location-data.php:65
+msgid "Postal address"
+msgstr ""
+
+#: partials/views/unit/unit-location-data.php:77
+msgid "Transport connections"
+msgstr ""
+
+#: partials/views/unit/unit-opening-hours.php:33
+msgid "Upcoming events and hobbies"
+msgstr ""
+
+#: partials/views/unit/unit-opening-hours.php:52
+msgid "Show more events and hobbies"
+msgstr ""
+
+#: partials/views/unit/unit-opening-hours.php:63
+msgid "No upcoming events and hobbies"
+msgstr ""
+
+#: partials/views/youth-council-elections/candidate.php:35
+msgid "Year of birth"
+msgstr ""
+
+#: partials/views/youth-council-elections/candidate.php:39
+msgid "Postal code"
+msgstr ""
+
+#: single.php:56
+msgid "Youth centres related to the article"
+msgstr ""
+
+#: single.php:71
+msgid "Keywords"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Nuhe"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid ""
+"https://github.com/devgeniem/client-hel-multisite/tree/master/web/app/"
+"themes/nuhe"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Nuorten Helsinki theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Geniem"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://geniem.fi"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Etusivu"
+msgstr ""

@@ -1,0 +1,42 @@
+.nuhe-tag-cloud {
+    $nuhe-tag-cloud: &;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: $spacing-3-xl;
+        padding-bottom: $spacing-2-xs;
+        border-bottom: 1px solid $color-grey;
+
+        #{$nuhe-tag-cloud}--has-description & {
+            margin-bottom: $spacing-s;
+        }
+    }
+
+    &__description {
+        margin-bottom: $spacing-xl;
+
+        @include breakpoint(l) {
+            max-width: 80%;
+        }
+
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .tag-cloud-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            margin-right: $spacing-3-xs;
+            margin-bottom: $spacing-3-xs;
+        }
+    }
+}

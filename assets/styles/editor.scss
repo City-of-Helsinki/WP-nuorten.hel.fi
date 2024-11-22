@@ -1,0 +1,44 @@
+// HDS base styles, includes design tokens as CSS variables
+@import "~hds-core/lib/base.css";
+
+// HDS design tokes as SCSS variables
+// Design tokens are included as CSS variables in hds-core, but we also need 
+// them for use in scss in e.g. breakpoints, which do not support using native variables
+@import "~hds-design-tokens/lib/all";
+
+/*--------------------------------------------------------------
+# Settings - All project global settings are stored here.
+--------------------------------------------------------------*/
+@import "settings/fonts";
+@import "settings/settings";
+
+// Set font
+.rich-text,
+.editor-post-title .editor-post-title__input {
+    font-family: $font-default, Helvetica, Arial, sans-serif;
+    color: $color-black-90;
+}
+
+/*--------------------------------------------------------------
+# Base styles
+--------------------------------------------------------------*/
+@import "base/breakpoints";
+@import "base/images";
+@import "base/object-fit";
+
+/*--------------------------------------------------------------
+# Blocks - Gutenberg blocks.
+--------------------------------------------------------------*/
+@import "blocks/blocks";
+
+
+// acf fix
+#multi-column-wrapper {
+    tbody {
+        &.ui-sortable {
+            @include breakpoint(xl) {
+                display: flex;
+            }
+        }
+    }
+}

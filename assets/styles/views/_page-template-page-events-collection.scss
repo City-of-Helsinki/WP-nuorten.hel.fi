@@ -1,0 +1,167 @@
+.page-template-page-events-collection {
+    .events-collection-hero {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: $spacing-s;
+
+            @include breakpoint(m) {
+                flex-direction: row;
+                padding-bottom: $spacing-xl;
+            }
+        }
+
+        &__item {
+            @include breakpoint(m) {
+                flex-basis: 50%;
+            }
+
+            &--text {
+                order: 2;
+                padding: $spacing-s;
+
+                @include breakpoint(m) {
+                    order: 1;
+                    padding-right: $spacing-xl;
+                    padding-left: $spacing-xl;
+                }
+            }
+
+            &--image {
+                order: 1;
+                padding-bottom: 56.25%;
+
+                @include breakpoint(m) {
+                    order: 2;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .social-media-share {
+        margin-top: $spacing-l;
+    }
+
+    .nuhe-layout {
+        margin-top: 0;
+
+        &:last-child {
+            padding-bottom: $spacing-layout-xl * 2;
+        }
+    }
+
+    .event-grid {
+        &-grid {
+            display: grid;
+            @include breakpoint(m) {
+                grid-gap: 1.75rem 3rem;
+            }
+            @include breakpoint(l) {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        &-item {
+            display: grid;
+            background-color: $color-white;
+
+            @include breakpoint(m) {
+                grid-template-columns: 4fr 5fr;
+                grid-column: auto;
+            }
+
+            &.is-hidden {
+                display: none;
+            }
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                padding: $spacing-s;
+
+                > * {
+                    margin-top: 0;
+                    margin-bottom: $spacing-2-xs;
+                }
+            }
+
+            &__date {
+                @include breakpoint(m) {
+                    order: 2;
+                }
+            }
+
+            &__title {
+                @include breakpoint(m) {
+                    order: 1;
+                }
+            }
+
+            &__location {
+                @include breakpoint(m) {
+                    order: 3;
+                }
+            }
+
+            &__tickets {
+                display: flex;
+                flex-grow: 1;
+                flex-direction: column;
+                margin-bottom: 0;
+
+                @include breakpoint(m) {
+                    order: 4;
+                }
+            }
+
+            .ticket-price {
+                margin-bottom: $spacing-2-xs;
+            }
+
+            .links {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: auto;
+
+                @include breakpoint(m) {
+                    justify-content: flex-end;
+                }
+
+                .hds-button {
+                    &-link {
+                        padding: 0;
+                    }
+
+                    &__label {
+                        padding: $spacing-xs;
+                    }
+                }
+            }
+
+            .ticket-actions {
+                flex-shrink: 0;
+                margin-bottom: $spacing-2-xs;
+
+                .hds-button--color-success {
+                    .hds-icon {
+                        order: 2;
+                        margin-right: $spacing-s;
+                    }
+                }
+
+                & + .read-more {
+                    margin-left: $spacing-2-xs;
+                }
+            }
+
+            .read-more {
+                flex-shrink: 0;
+            }
+        }
+
+        .hds-button--show-more-events {
+            margin-top: $spacing-m;
+        }
+    }
+}

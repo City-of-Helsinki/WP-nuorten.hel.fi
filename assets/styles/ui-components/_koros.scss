@@ -1,0 +1,41 @@
+.koro {
+    width: 100%;
+    height: 84px;
+    background: white;
+    mask-image: url(../images/perus.svg);
+    
+    &--pulse {
+        mask-image: url(../images/pulssi.svg);
+    }
+
+    &--wave {
+        mask-image: url(../images/tyrsky.svg);
+    }
+
+    &--blue {
+        background-color: $color-fog-medium-light;
+    }
+
+    &--grey {
+        background-color: $color-grey;
+    }
+
+    &--bus {
+        background-color: $color-bus;
+    }
+
+    &--before {
+        top: -32px;
+    }
+
+    .nuhe-layout &,
+    .unit-section & {
+        position: absolute;
+        z-index: 1;
+
+        &:not(.koro--before) {
+            bottom: -30px;
+            transform: rotate(180deg);
+        }
+    }
+}

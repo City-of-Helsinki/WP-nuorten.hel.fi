@@ -1,0 +1,35 @@
+//
+// Container with constrained max-width
+// Uses HDS breakpoints and container max width design tokens
+// See https://hds.hel.fi/design-tokens/breakpoints
+
+.container {
+    margin: 0 auto;
+
+    &:not(.container--full):not(.container--full-small) {
+        max-width: 90%;
+    }
+
+    &:not(.container--full):not(.container--full-medium-up) {
+        @include breakpoint(m) {
+            max-width: $container-width-m;
+        }
+    
+        @include breakpoint(l) {
+            max-width: $container-width-l;
+        }
+    
+        @include breakpoint(xl) {
+            max-width: $container-width-xl;
+        }
+    }
+    
+    &--image-by {
+        position: relative;
+        top: -$spacing-4-xl;
+    }
+
+    &--sub-pages {
+        padding-bottom: $spacing-layout-l * 3;
+    }
+}

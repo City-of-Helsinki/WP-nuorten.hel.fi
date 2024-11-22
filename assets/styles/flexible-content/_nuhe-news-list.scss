@@ -1,0 +1,42 @@
+.nuhe-news-list {
+    .nuhe-card-list {
+        &__title {
+            margin-bottom: $spacing-m;
+        }
+
+        &__description {
+            margin-bottom: $spacing-m;
+        }
+    }
+
+    &__item-title {
+        display: flex;
+        align-items: flex-end;
+        min-height: 8rem;
+    }
+
+    &__item-image {
+        position: relative;
+
+        img {
+            border-radius: $spacing-s;
+        }
+    }
+
+    &__item-description {
+        font-size: $fontsize-body-s;
+        margin-top: $spacing-2-xs;
+        color: $color-grey--dark;
+    }
+
+    &__item-domain {
+        font-size: $fontsize-body-s;
+        position: absolute;
+        bottom: .35rem;
+        left: 0;
+        padding: .3rem $spacing-2-xs;
+        background-color: $color-grey;
+        border-top-right-radius: $spacing-s;
+        border-bottom-left-radius: $spacing-s;
+    }
+}

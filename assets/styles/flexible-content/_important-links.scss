@@ -1,0 +1,25 @@
+.important-links {
+    margin-bottom: $spacing-layout-l;
+
+    .links-list {
+        li {
+            padding: $spacing-m $spacing-l;
+
+            .color-theme-1 & {
+                background-color: $color-theme-1-light;
+            }
+
+            .color-theme-2 & {
+                background-color: $color-theme-2-light;
+            }
+
+            .color-theme-3 & {
+                background-color: $color-theme-3-light;
+            }
+
+            .color-theme-4 & {
+                background-color: $color-theme-4-light;
+            }
+        }
+    }
+}

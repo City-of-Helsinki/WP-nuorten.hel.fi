@@ -1,0 +1,31 @@
+// Theme Settings
+
+// Custom colors
+$color-grey: #f2f2f2;
+$color-grey--dark: #737373;
+$color-black-2: #1b1b1b;
+$color-young-voice: #ff9932;
+// ****************************************************************************
+
+// Color Themes
+// ****************************************************************************
+$color-theme-default: $color-grey;
+$color-theme-1: $color-suomenlinna;
+$color-theme-1-light: $color-suomenlinna-medium-light;
+$color-theme-2: $color-copper;
+$color-theme-2-light: $color-copper-medium-light;
+$color-theme-3: $color-engel;
+$color-theme-3-light: $color-engel-medium-light;
+$color-theme-4: $color-fog;
+$color-theme-4-light: $color-fog-medium-light;
+
+// Breakpoints
+// ****************************************************************************
+$breakpoint-m: 769px;
+$breakpoints: (
+    "xs": $breakpoint-xs,
+    "s": $breakpoint-s ,
+    "m": $breakpoint-m ,
+    "l": $breakpoint-l ,
+    "xl": $breakpoint-xl
+);

@@ -1,0 +1,44 @@
+.unit-section {
+    position: relative;
+    margin-bottom: $spacing-xl;
+
+    &--opening-hours {
+        margin-bottom: 0;
+        padding-top: $spacing-5-xl;
+        padding-bottom: $spacing-2-xl;
+
+        .event-grid__item {
+            background-color: $color-white;
+            grid-column: span 6;
+        }
+    }
+
+    .event-grid__grid + .event-grid__grid {
+        margin-top: $spacing-s;
+    }
+
+    .event-grid__grid {
+        &.is-hidden {
+            display: none;
+        }
+    }
+
+    .hds-button {
+        &--show-more-events {
+            width: 100%;
+            margin-top: $spacing-xl;
+            margin-bottom: $spacing-s;
+        }
+    }
+
+    &__title {
+        @extend .has-underline;
+
+        &--intro {
+            margin-bottom: 0;
+        }
+    }
+    &__lead-text {
+        @extend .wp-block-ggb-lead-paragraph;
+    }
+}

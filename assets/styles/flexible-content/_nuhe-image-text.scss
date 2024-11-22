@@ -1,0 +1,22 @@
+.nuhe-image-text {
+    &__title {
+        margin-top: 0;
+    }
+
+    .text-content {
+        &:not(.grid-columns__column) {
+            @include breakpoint(l) {
+                max-width: 80%;
+            }
+        }
+    }
+    .image-text-ctas {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: $spacing-l;
+
+        li {
+            margin-right: $spacing-m;
+        }
+    }
+}

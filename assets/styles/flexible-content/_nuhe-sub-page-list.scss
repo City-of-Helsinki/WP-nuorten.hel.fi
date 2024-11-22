@@ -1,0 +1,49 @@
+.nuhe-sub-page-list {
+    &__title {
+        margin-top: 0;
+        margin-bottom: $spacing-3-xl;
+        padding-bottom: $spacing-2-xs;
+        border-bottom: 1px solid $color-grey;
+    }
+
+    .sub-page-list-items {
+        @include list-reset;
+    }
+
+    .sub-page-list-item {
+        &__subpage {
+            .link {
+                font-size: $fontsize-heading-xs;
+                font-weight: 700;
+                display: block;
+                padding: $spacing-s $spacing-m;
+                color: $color-black;
+                text-decoration: none;
+                background-color: $color-fog;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                .hds-icon {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &__children {
+            .links-list {
+                margin-top: $spacing-s;
+                margin-bottom: $spacing-s;
+
+                .link {
+                    font-weight: 700;
+
+                    .hds-icon {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.volunteering-hero {
+    .container + & {
+        margin-top: $spacing-s;
+    }
+    
+    .grid-columns {
+        grid-template-columns: repeat(4, 1fr);
+
+        @include breakpoint(l) {
+            grid-template-columns: repeat(12, 1fr);
+        }
+    }
+
+    &__content {
+        &--text {
+            @include breakpoint(l) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: $spacing-2-xl;
+            }
+
+            .page-heading {
+                @include breakpoint(l) {
+                    margin-top: 0;
+                    margin-bottom: $spacing-2-xl;
+                }
+            }
+        }
+
+        &--image {
+            .img-container {
+                @include breakpoint(l) {
+                    max-height: 500px;
+                }
+
+                &::before {
+                    @include breakpoint(l) {
+                        padding-top: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .volunteering-hero-desc {
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

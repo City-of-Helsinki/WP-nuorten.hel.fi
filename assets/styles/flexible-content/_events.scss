@@ -1,0 +1,19 @@
+.nuhe-events {
+    &.has-bg-color--grey {
+        background-color: $color-grey;
+
+        .event-grid__item {
+            background-color: $color-white;
+        }
+    }
+
+    .event-grid {
+
+        &__title {
+            font-size: $fontsize-heading-l;
+            margin: 0 0 $spacing-2-xl;
+            padding-bottom: $spacing-xs;
+            border-bottom: 1px solid $color-black-20;
+        }
+    }
+}

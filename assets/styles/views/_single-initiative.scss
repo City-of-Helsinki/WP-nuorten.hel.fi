@@ -1,0 +1,28 @@
+.single-initiative-cpt {
+    .initiative-container {
+        margin-bottom: $spacing-layout-2-xl;
+    }
+
+    .initiative-status + .initiative-heading {
+        margin-top: 0;
+    }
+
+    .initiative-status {
+        display: inline-block;
+        margin-top: $spacing-s;
+        margin-bottom: $spacing-s;
+        padding: $spacing-4-xs $spacing-2-xs;
+    }
+
+    .initiative-status-notes {
+        margin-top: $spacing-xl;
+        padding: $spacing-s $spacing-m;
+        background-color: $color-theme-default;
+    }
+}
+
+.initiative-status {
+    &--processed {
+        background-color: $color-tram-light;
+    }
+}

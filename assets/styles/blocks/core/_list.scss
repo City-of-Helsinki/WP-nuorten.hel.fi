@@ -1,0 +1,90 @@
+.wp-core-list {
+    margin: $spacing-3-xl $spacing-4-xl $spacing-3-xl 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: $spacing-xl;
+        padding-left: $spacing-2-xl;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            position: absolute;
+            top: $spacing-3-xs;
+            display: block;
+            color: $color-white;
+
+            .color-theme-default & {
+                & {
+                    background-color: $color-theme-default;
+                }
+            }
+
+            .color-theme-1 & {
+                & {
+                    background-color: $color-theme-1;
+                }
+            }
+        
+            .color-theme-2 & {
+                & {
+                    background-color: $color-theme-2;
+                }
+            }
+        
+            .color-theme-3 & {
+                & {
+                    background-color: $color-theme-3;
+                }
+            }
+        
+            .color-theme-4 & {
+                & {
+                    background-color: $color-theme-4;
+                }
+            }
+        }
+
+        a {
+            font-weight: 500;
+            color: $color-black;
+        }
+    }
+
+    &--ol {
+        counter-reset: number-counter;
+
+        li {
+            counter-increment: number-counter;
+
+            &::before {
+                font-size: $fontsize-heading-s;
+                font-weight: 700;
+                line-height: 2;
+                content: counter(number-counter);
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: $spacing-xl;
+                height: $spacing-xl;
+            }
+        }
+    }
+
+    &--ul {
+        li {
+            &::before {
+                content: " ";
+                left: $spacing-2-xs;
+                width: $spacing-s;
+                height: $spacing-s;
+                border-radius: 50%;
+            }
+        }
+    }
+}

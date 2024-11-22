@@ -1,0 +1,38 @@
+.unit-instructors-list {
+    @include list-reset;
+
+    margin-top: $spacing-layout-m;
+    margin-bottom: $spacing-layout-m;
+
+    &__item {
+        @include breakpoint(m) {
+            display: flex;
+        }
+
+        .instructor-image {
+            width: 100%;
+            max-width: 78px;
+            border: 3px solid $color-suomenlinna;
+            border-radius: 50%;
+
+            &::before {
+                padding-bottom: 100%;
+            }
+
+            @include breakpoint(m) {
+                align-self: flex-start;
+            }
+        }
+
+        .instructor-contact-details {
+            @include breakpoint(m) {
+                align-self: center;
+                margin-left: $spacing-m;
+            }
+
+            .instructor-name {
+                font-weight: 700;
+            }
+        }
+    }
+}

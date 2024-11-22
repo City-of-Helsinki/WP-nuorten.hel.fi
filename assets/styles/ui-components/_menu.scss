@@ -1,0 +1,186 @@
+.menu {
+    position: relative;
+
+    &__list {
+        padding: 0;
+        list-style: none;
+
+        @include breakpoint(l) {
+            display: flex;
+        }
+
+        .menu-item {
+            a {
+                &:hover {
+                    &::before {
+                        @include breakpoint(l) {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: $spacing-l;
+                            display: block;
+                            width: calc(100% - #{$spacing-l} * 2);
+                            height: .2rem;
+                            background-color: $color-black-2;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                > a,
+                .menu__list .current-menu-item {
+                    &,
+                    &:hover {
+                        &::before {
+                            @include breakpoint(l) {
+                                left: 0 !important;
+                                width: calc(100% - #{$spacing-l}) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.current-menu-item,
+            &.current-menu-ancestor,
+            &.current-page-ancestor {
+                > a {
+                    text-decoration: underline;
+
+                    @include breakpoint(l) {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        > .menu-item {
+            &.current-menu-ancestor,
+            &.current-page-ancestor,
+            &.current-menu-item {
+                // Push content past absolutely positioned nav.
+
+                > a,
+                .current-menu-item a {
+                    &::before {
+                        @include breakpoint(l) {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: $spacing-l;
+                            display: block;
+                            width: calc(100% - #{$spacing-l} * 2);
+                            height: .2rem;
+                            background-color: $color-black-2;
+                        }
+                    }
+                }
+
+                .current-menu-item {
+                    position: relative;
+                }
+            }
+
+            &.menu-item-has-children {
+                &.current-menu-item,
+                &.current-menu-ancestor,
+                &.current-page-ancestor {
+                    &::after {
+                        content: "";
+                        position: relative;
+                        display: block;
+                        height: $spacing-3-xl;
+                    }
+                }
+
+                display: flex;
+                flex-wrap: wrap;
+
+                @include breakpoint(l) {
+                    display: block;
+                }
+            }
+        }        
+    }
+
+    &__submenu-toggle {
+        display: block;
+        margin-left: auto;
+        padding-right: $spacing-m;
+
+        &[aria-expanded="true"] {
+            .hds-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        @include breakpoint(l) {
+            display: none;
+        }
+    }
+
+    // Wrapper div around a submenu
+    &__submenu {
+        display: none;
+        flex-basis: 100%;
+        padding: 0;
+        list-style: none;
+    
+        .current-menu-ancestor &,
+        .current-page-ancestor &,
+        .current-menu-item & {
+            display: block;
+            background: $color-black-20; // Default just in case, not to be used.
+        }
+    
+        .color-sote & {
+            background-color: $color-suomenlinna-light;
+        }
+    
+        .color-kasko & {
+            background-color: $color-copper-light;
+        }
+    
+        .color-kuva & {
+            background-color: $color-engel-medium-light;
+        }
+
+        .color-osva & {
+            background-color: $color-theme-4-light;
+        }
+    
+        @include breakpoint(l) {
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .menu-item {
+
+        a {
+            position: relative;
+            z-index: 1;
+            display: block;
+            padding: $spacing-s $spacing-m;
+            color: $color-black;
+            text-decoration: none;
+    
+            @include breakpoint(l) {
+                padding: $spacing-s $spacing-l;
+            }
+        }
+    
+        @include breakpoint(l) {
+            &:first-child {
+                > a {
+                    padding-left: 0;
+                }
+            }    
+        }
+    
+    }
+ 
+}
+

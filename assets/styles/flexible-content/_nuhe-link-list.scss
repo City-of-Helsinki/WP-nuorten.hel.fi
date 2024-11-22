@@ -1,0 +1,21 @@
+.nuhe-link-list {
+    margin-bottom: $spacing-layout-l;
+
+    .unit-sections & {
+        margin-top: $spacing-layout-l;
+    }
+
+    .links-title {
+        margin-bottom: $spacing-s;
+    }
+
+    .links-list {
+        margin-top: $spacing-l;
+        margin-bottom: 0;
+
+        li {
+            padding: $spacing-m $spacing-l;
+            background-color: $color-grey;
+        }
+    }
+}

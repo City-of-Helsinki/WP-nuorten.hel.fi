@@ -1,0 +1,41 @@
+.has-dash {
+    position: relative;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        bottom: $spacing-s;
+        left: 50%;
+
+        display: block;
+
+        width: $spacing-xl;
+        height: $spacing-3-xs;
+
+        transform: translateX(-50%);
+    }
+
+    .color-theme-1 & {
+        &::after {
+            background-color: $color-theme-1;
+        }
+    }
+
+    .color-theme-2 & {
+        &::after {
+            background-color: $color-theme-2;
+        }
+    }
+
+    .color-theme-3 & {
+        &::after {
+            background-color: $color-theme-3;
+        }
+    }
+
+    .color-theme-4 & {
+        &::after {
+            background-color: $color-theme-4;
+        }
+    }
+}

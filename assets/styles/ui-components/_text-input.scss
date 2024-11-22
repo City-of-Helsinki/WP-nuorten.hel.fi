@@ -1,0 +1,14 @@
+.hds-text-input {
+    &--search {
+        .hds-text-input__input-wrapper {
+            .hds-button {
+                position: absolute;
+                right: 0;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.featured-image {
+    .img-container {
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-bottom: percentage(9/16);
+        }
+    }
+}

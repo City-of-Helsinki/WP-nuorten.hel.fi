@@ -1,0 +1,9 @@
+.single {
+    .container + .container {
+        margin-top: $spacing-xl;
+    }
+
+    .article-button-links {
+        justify-content: flex-start;
+    }
+}

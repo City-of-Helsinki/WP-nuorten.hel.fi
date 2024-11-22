@@ -1,0 +1,14 @@
+.unit-some {
+    @include list-reset;
+
+    margin-top: $spacing-l;
+
+    li {
+        display: inline-block;
+        margin-right: $spacing-2-xl;
+
+        a {
+            color: $color-black;
+        }
+    }
+}

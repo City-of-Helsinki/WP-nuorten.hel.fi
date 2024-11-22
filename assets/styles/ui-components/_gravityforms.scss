@@ -1,0 +1,20 @@
+// sass-lint:disable class-name-format no-important
+
+.gfield_radio {
+    display: flex;
+
+    > li {
+        display: flex !important;
+        align-items: center !important;
+
+        &:not(:last-child) {
+            margin-right: $spacing-m !important;
+        }
+
+        > input {
+            &[type="radio"] {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,241 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: $spacing-layout-2-xl;
+
+    &.text-black {
+        * {
+            color: $color-black;
+        }
+    }
+
+    &.has-bg-color--pink {
+        &::before {
+            background-color: rgba($color-theme-1, .8);
+        }
+    }
+
+    @include breakpoint(l) {
+        padding-bottom: $spacing-layout-l * 3;
+
+        &--single-unit {
+            padding-bottom: $spacing-layout-l * 2;
+        }
+    }
+
+    &--page-front {
+        @include bg-cover();
+
+        background-position: 90%;
+
+        @include breakpoint(l) {
+            background-position: center;
+        }
+
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 150px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba($color-black, .8);
+
+            @include breakpoint(l) {
+                top: 0;
+                width: 50%;
+            }
+        }
+    }
+
+    &--page-category-landing {
+        .color-theme-1 & {
+            background-color: $color-theme-1;
+        }
+
+        .color-theme-2 & {
+            background-color: $color-theme-2;
+        }
+
+        .color-theme-3 & {
+            background-color: $color-theme-3;
+        }
+
+        .color-theme-4 & {
+            background-color: $color-theme-4;
+        }
+    }
+
+    &.has-bg-color--black,
+    &--page-front {
+        color: $color-white;
+
+        a {
+            color: $color-white !important;
+        }
+    }
+
+    &__grid {
+        @include grid();
+        @include gutter();
+
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg-image {
+        display: none;
+        width: 50%;
+        opacity: .8;
+
+        .hero--page-category-landing &,
+        .hero--single-unit & {
+            top: -$spacing-2-xl;
+            right: -35%;
+            width: 100%;
+
+            @include breakpoint(l) {
+                background-size: contain;
+            }
+        }
+
+        .color-theme-1 & {
+            background-image: url(../images/theme-1-bg-pattern.svg);
+        }
+
+        .color-theme-2 & {
+            background-image: url(../images/theme-2-bg-pattern.svg);
+        }
+
+        .color-theme-3 & {
+            background-image: url(../images/theme-3-bg-pattern.svg);
+        }
+
+        .color-theme-4 & {
+            background-image: url(../images/theme-4-bg-pattern.svg);
+        }
+
+        .hero--single-unit & {
+            background-image: url(../images/theme-bg-pattern-hero.svg);
+        }
+
+        @include breakpoint(l) {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    .koro {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.hero-content {
+    grid-column: span 7;
+
+    @include breakpoint(m) {
+        .hero--page-front & {
+            grid-column: span 6;
+        }
+    }
+
+    .page-heading {
+        margin-top: $spacing-3-xl;
+
+        @include breakpoint(m) {
+            max-width: 70%;
+
+            .page-template-frontpage & {
+                max-width: 90%;
+            }
+        }
+
+        .hero--single-unit & {
+            margin-top: $spacing-l;
+        }
+
+        .hero--page-front & {
+            font-size: $fontsize-heading-m;
+            margin-top: $spacing-layout-xl * 2;
+
+            @include breakpoint(l) {
+                font-size: $fontsize-heading-xl;
+                margin-top: $spacing-layout-2-xl;
+            }
+        }
+
+        & + .links-list {
+            margin-top: $spacing-xl;
+
+            @include breakpoint(l) {
+                margin-top: $spacing-3-xl;
+            }
+        }
+    }
+
+    &__description {
+        @include breakpoint(m) {
+            max-width: 70%;
+        }
+
+        p {
+            margin-top: 0;
+
+            &:last-child {
+                margin-bottom: $spacing-l;
+            }
+        }
+    }
+
+    .links-list {
+        li {
+            margin-right: $spacing-xs;
+            margin-bottom: $spacing-2-xs;
+
+            @include breakpoint(l) {
+                margin-bottom: $spacing-xs;
+            }
+
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+
+                &.hds-button--theme-white:not(:disabled) {
+                    &:hover {
+                        background-color: $color-white;
+                        border-color: inherit;
+                    }
+                }
+
+                &.hds-button--border-white:not(:disabled) {
+                    &:hover {
+                        color: $color-black !important;
+                        background-color: $color-white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-image {
+    grid-column: span 8;
+    margin-top: $spacing-l;
+
+    @include breakpoint(l) {
+        grid-column: span 5;
+    }
+}
+
+.page-template-default {
+    .anchor-links {
+        .hds-button {
+            &::after {
+                border-color: $color-black !important;
+            }
+        }
+    }
+}

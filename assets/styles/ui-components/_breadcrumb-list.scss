@@ -1,0 +1,42 @@
+.breadcrumb-list {
+    @include list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $spacing-l;
+    margin-bottom: 0 !important;
+
+    .hero-content & + .page-heading,
+    & + .youth-center-search__title,
+    & + .page-heading,
+    & + .featured-image {
+        margin-top: $spacing-xs;
+    }
+
+    & + .event__grid {
+        .event__description {
+            margin-top: $spacing-m;
+        }
+    }
+
+    &__item {
+        a,
+        span {
+            font-size: $fontsize-body-s;
+            font-weight: 400;
+            padding-right: $spacing-3-xs;
+            color: $color-black;
+            text-decoration: none;
+
+            .has-bg-color--black & {
+                color: $color-white;
+            }
+        }
+
+        & + & {
+            &:before {
+                content: "\0002f";
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.nuhe-layout {
+    position: relative;
+
+    &--main-content {
+        padding-top: $spacing-5-xl;
+        padding-bottom: $spacing-5-xl;
+
+        .page-template-page-event &,
+        .post-type-archive-event & {
+            padding-bottom: $spacing-layout-l * 3;
+        }
+
+        &.has-bg-color--grey {
+            margin-top: $spacing-5-xl;
+        }
+    }
+
+    &.has-koro {
+        margin-bottom: $spacing-5-xl;
+    }
+
+
+    &--respa {
+        padding-bottom: $spacing-layout-l * 3;
+    }
+}

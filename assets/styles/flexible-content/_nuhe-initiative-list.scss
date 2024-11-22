@@ -1,0 +1,15 @@
+.nuhe-initiative-list {
+    .card-list-item {
+        .keyword {
+            position: absolute;
+            top: - $spacing-xs;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        time {
+            display: block;
+            margin-top: $spacing-2-xs;
+        }
+    }
+}

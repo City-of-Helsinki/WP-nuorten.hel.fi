@@ -1,0 +1,15 @@
+.button-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include breakpoint(s) {
+        flex-direction: row;
+    }
+
+    li {
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.unit-location-data {
+    &__header,
+    &__details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        padding: $spacing-s $spacing-xs $spacing-s $spacing-m;
+
+        * {
+            margin-bottom: 0;
+        }
+
+        .detail-block {
+            display: flex;
+        }
+
+        .open-unit-location {
+            display: flex;
+            align-items: center;
+            color: $color-black;
+
+            &:hover {
+                border-bottom-color: $color-black;
+            }
+        }
+    }
+
+    &__map {
+        height: 260px;
+    }
+
+    &__details {
+        padding: $spacing-m;
+
+        &__block {
+            .detail-block__content {
+                font-size: $fontsize-body-m;
+            }
+
+            .links {
+                a {
+                    font-size: $fontsize-body-m;
+                    font-weight: 500;
+
+                    &:hover {
+                        border-block-color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+}

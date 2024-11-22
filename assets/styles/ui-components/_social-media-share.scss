@@ -1,0 +1,53 @@
+.social-media-share {
+    &__title {
+        font-size: $fontsize-heading-xs;
+        font-weight: 700;
+        display: block;
+        margin-bottom: $spacing-s;
+    }
+
+    &__links {
+        @include list-reset;
+
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: $spacing-m;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $color-black;
+            }
+
+            a,
+            button {
+                &:focus {
+                    outline: 2px solid $color-black;
+                }
+            }
+        }
+
+        .hds-icon {
+            margin-left: 0;
+        }
+    }
+
+    .clipboard-tooltip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 200px;
+        padding: $spacing-xs;
+        color: $color-white;
+        background-color: $color-success;
+
+        &.is-hidden {
+            display: none;
+        }
+    }
+}

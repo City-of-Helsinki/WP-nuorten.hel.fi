@@ -1,0 +1,106 @@
+.event {
+    &__header {
+        padding-top: $spacing-m;
+        background-color: $color-engel-medium-light;
+
+        @include breakpoint(m) {
+            padding-top: 0;
+        }
+
+        &.has-empty-image {
+            .event__info {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__header-inner {
+        @include breakpoint(m) {
+            display: flex;
+
+            > div {
+                width: 50%;
+            }
+        }
+    }
+
+    &__image {
+        padding-bottom: 56.25%;
+
+        @include breakpoint(m) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__info {
+        padding: $spacing-m;
+
+        @include breakpoint(l) {
+            padding: $spacing-l $spacing-m $spacing-3-xl;
+        }
+    }
+
+    &__date {
+        font-size: $fontsize-body-l;
+        margin: $spacing-2-xs 0;
+    }
+
+    &__title {
+        font-size: $fontsize-heading-l;
+        line-height: 1.1;
+        margin: $spacing-2-xs 0;
+    }
+
+    &__lead {
+        font-size: $fontsize-body-l;
+        margin: 0 0 $spacing-m;
+    }
+
+    &__location,
+    .ticket__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: $spacing-xs;
+
+        .hds-icon {
+            flex: 0 0 auto;
+            margin-right: $spacing-2-xs;
+        }
+    }
+
+    .ticket {
+        &__actions {
+            margin-top: $spacing-m;
+        }
+    }
+
+    &__grid {
+        @include grid();
+        @include gutter();
+    }
+
+    &__description,
+    &__details {
+        margin-top: $spacing-m;
+        grid-column: span 4;
+
+        @include breakpoint(s) {
+            margin-bottom: $spacing-3-xl;
+        }
+
+        @include breakpoint(l) {
+            margin-top: $spacing-2-xl;
+            grid-column: span 6;
+        }
+    }
+
+    &__description-title {
+        margin-top: 0;
+    }
+
+    &__details {
+        @include breakpoint(m) {
+            padding-left: $spacing-m;
+        }
+    }
+}

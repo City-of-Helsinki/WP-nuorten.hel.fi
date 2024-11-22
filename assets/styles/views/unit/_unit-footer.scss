@@ -1,0 +1,14 @@
+.unit-footer {
+    position: relative;
+
+    > .koro {
+        position: absolute;
+        top: -55px;
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+
+    .nuhe-layout + .nuhe-layout--respa {
+        background-color: $color-grey;
+    }
+}

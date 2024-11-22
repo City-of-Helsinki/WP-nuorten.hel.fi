@@ -1,0 +1,43 @@
+.site-logo {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin-right: auto;
+    text-decoration: none;
+
+    img {
+        max-width: 5rem;
+        margin-right: $spacing-s;
+
+        @include breakpoint(m) {
+            margin-right: $spacing-m;
+        }
+    }
+
+    &__title {
+        font-size: $fontsize-body-s;
+        font-weight: 500;
+        position: relative;
+        top: -3px;
+        color: $color-black;
+
+        @include breakpoint(m) {
+            font-size: $fontsize-heading-xs;
+        }
+    }
+
+    .site-footer & {
+        @media screen and (max-width: #{$breakpoint-s - 1px}) {
+            display: block;
+            max-width: none;
+            text-align: center;
+
+            img {
+                margin: 0;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.keywords {
+    @include list-reset();
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.keyword {
+    font-size: $fontsize-body-s;
+    font-weight: 700;
+    display: block;
+    margin: 0 $spacing-2-xs $spacing-2-xs 0;
+    padding: $spacing-4-xs $spacing-2-xs;
+    background-color: $color-engel;
+}

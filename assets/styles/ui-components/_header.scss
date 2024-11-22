@@ -1,0 +1,117 @@
+.site-header {
+
+    border-bottom: .0625rem solid $color-black-20;
+
+    @include breakpoint(l) {
+        border-bottom: 0;
+    }
+
+    > .container {
+        display: flex;
+        padding: 0 0 0 $spacing-m;
+
+        @include breakpoint(m) {
+            padding: 0;
+        }
+
+
+        > * {
+            flex: 0 0 auto;
+        }
+    }
+
+    &__desktopsearch,
+    &__desktoplang {
+        display: none;
+
+        @include breakpoint(l) {
+            display: block;
+        }
+    }
+
+    &__desktoplang {
+        > .hds-button {
+            text-transform: uppercase;
+        }
+    }
+
+    &__menutoggle {
+        @include breakpoint(l) {
+            display: none;
+        }        
+    }
+
+    &__menu {
+        @include breakpoint(l) {
+            border-top: .0625rem solid $color-black-20;
+        }
+    }
+
+    &__navwrapper {
+        display: none;
+
+        .is-menu-open & {
+            display: block;
+            min-height: calc(100vh - #{$spacing-3-xl});
+        }
+
+        @include breakpoint(l) {
+            display: block;
+        }
+    }
+
+    &__mobilelang {
+        border-top: .0625rem solid $color-black-20;
+
+        @include breakpoint(l) {
+            display: none;
+        }
+    }
+
+    &__mobilelanglist {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: $spacing-l 0;
+        list-style: none;
+
+        li {
+            flex: 1 1 auto;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+
+            &[aria-current] {
+                border-bottom: .3125rem solid $color-fog;
+            }
+        }
+    }
+
+    &__search-wrapper {
+        display: flex;
+        padding: $spacing-m;
+
+        .hds-text-input {
+            flex: 1 1 auto;
+        }
+
+        .hds-button {
+            flex: 0 0 auto;
+        }
+
+        &--mobile {
+            border-top: .0625rem solid $color-black-20;
+            border-bottom: .0625rem solid $color-black-20;
+            @include breakpoint(l) {
+                display: none;
+            }
+
+            form,
+            .hds-text-input {
+                width: 100% !important;
+            }
+        }
+    }
+}

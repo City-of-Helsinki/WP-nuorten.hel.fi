@@ -1,0 +1,69 @@
+// The sites typography styles
+
+// -- Links
+a {
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: .0625rem dotted;
+    }
+
+    .blocks &,
+    p & {
+        font-weight: 700;
+        color: $color-black;
+    }
+}
+
+// -- Headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: $lineheight-m;
+}
+
+h1 {
+    font-size: $fontsize-heading-xl;
+
+    .page-template-default .blocks &,
+    .post-template-default .blocks & {
+        @extend .h2;
+    }
+}
+
+h2,
+.h2 {
+    font-size: $fontsize-heading-l;
+}
+
+h2 {
+    .page-template-default .blocks &,
+    .post-template-default .blocks &,
+    &.event__description-title {
+        font-size: $fontsize-heading-m;
+    }
+}
+
+h3,
+.h3 {
+    font-size: $fontsize-heading-m;
+
+    .page-template-default .blocks &,
+    .post-template-default .blocks & {
+        font-size: $fontsize-heading-s;
+    }
+}
+
+h4,
+.h4 {
+    font-size: $fontsize-heading-s;
+}
+
+h5 {
+    font-size: $fontsize-heading-xs;
+}

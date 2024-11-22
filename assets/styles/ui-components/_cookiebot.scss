@@ -1,0 +1,26 @@
+// sass-lint:disable id-name-format, no-ids, no-important, class-name-format
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper {
+    display: flex !important;
+}
+
+.CybotCookiebotDialogBodyButton {
+    width: auto !important;
+    padding: .5rem .9rem !important;
+    border: 0 !important;
+}
+
+#CybotCookiebotDialog {
+    padding: 1rem !important;
+    border: 1px solid $color-black !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 0 !important;
+}
+
+#CybotCookiebotDialogBodyLevelButtons {
+    margin-top: .5rem !important;
+}
+
+#CybotCookiebotDialogPoweredbyCybot,
+#CybotCookiebotDialogPoweredByText {
+    display: none !important;
+} 

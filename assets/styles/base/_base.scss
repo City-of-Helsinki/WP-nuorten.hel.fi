@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+    // If user prefers reduced motion (usually OS-level setting)
+    // use instant scrolling to avoid triggering nausea.
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+// Sticky footer, the modern way.
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &.page-template-page-volunteering {
+        p {
+            font-size: $fontsize-body-l;
+        }
+    }
+}
+
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+$u-skip-to-content-shadow: rgba($color-black, .6);
+.u-skip-to-content {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+
+    &:active,
+    &:focus {
+        font-size: .875rem;
+        font-weight: 700;
+        top: $spacing-s;
+        left: $spacing-s;
+        z-index: 100000;
+        display: block;
+        overflow: visible;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: $spacing-2-xs;
+        color: $color-bus;
+        text-decoration: none;
+        white-space: normal;
+        background: $color-white;
+        box-shadow: 0 0 2px 2px $u-skip-to-content-shadow;
+        clip: auto;
+    }
+}
+
+.ui-helper-hidden-accessible,
+.is-sr-only,
+.screen-reader-text {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    word-wrap: normal !important; // sass-lint:disable-line no-important
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}

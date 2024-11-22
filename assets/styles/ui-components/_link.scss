@@ -1,0 +1,23 @@
+.link {
+    display: flex;
+    word-break: break-word;
+
+    &--icon-start {
+        .hds-icon {
+            flex-shrink: 0;
+            margin-right: $spacing-xs;
+            margin-left: 0 !important;
+        }
+    }
+
+    &--icon-end {
+        .hds-icon {
+            margin-left: $spacing-xs;
+        }
+    }
+
+    .hds-icon {
+        margin-left: $spacing-xs;
+        vertical-align: middle;
+    }
+}

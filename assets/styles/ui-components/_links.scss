@@ -1,0 +1,23 @@
+.links {
+    &-title {
+        margin-top: 0;
+    }
+
+    &-list {
+        @include list-reset();
+
+        li {
+            margin-bottom: $spacing-s;
+    
+            a {
+                color: $color-black;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,198 @@
+
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+
+    &__grid {
+        @include grid();
+        @include gutter();
+
+        position: relative;
+        z-index: 1;
+    }
+
+    &__controls {
+        position: absolute;
+        right: 0;
+        bottom: 1.5rem;
+        left: 0;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+    }
+
+    .glide__slide {
+        position: relative;
+        min-height: 590px;
+        background-size: cover;
+    }
+
+    &__bullet {
+        &.glide__bullet {
+            width: 1rem;
+            height: 1rem;
+            margin: .5em .25em;
+            background-color: $color-black;
+
+            &--active {
+                background-color: $color-copper;
+            }
+        }
+    }
+
+    &__overlay:before {
+        content: " ";
+        position: absolute;
+        top: 150px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba($color-black, .8);
+
+        @include breakpoint(l) {
+            top: 0;
+            width: 50%;
+        }
+    }
+
+    &__arrow-button {
+        margin: 0 1rem;
+        cursor: pointer;
+        all: unset;
+    }
+
+    .koro {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+    }
+}
+
+.hero-slider-content {
+    grid-column: span 7;
+
+    @include breakpoint(m) {
+        .hero-slider--page-front & {
+            grid-column: span 6;
+        }
+    }
+
+    .page-heading {
+        margin-top: $spacing-3-xl;
+        color: $color-white;
+
+        @include breakpoint(m) {
+            max-width: 70%;
+
+            .page-template-frontpage & {
+                max-width: 90%;
+            }
+        }
+
+        .hero-slider--page-front & {
+            font-size: $fontsize-heading-m;
+            margin-top: $spacing-layout-xl * 2;
+
+            @include breakpoint(l) {
+                font-size: $fontsize-heading-xl;
+                margin-top: $spacing-layout-2-xl;
+            }
+        }
+
+        & + .links-list {
+            margin-top: $spacing-xl;
+
+            @include breakpoint(l) {
+                margin-top: $spacing-3-xl;
+            }
+        }
+    }
+
+    &__description {
+        color: $color-white;
+
+        @include breakpoint(m) {
+            max-width: 70%;
+        }
+
+        p {
+            margin-top: 0;
+
+            &:last-child {
+                margin-bottom: $spacing-l;
+            }
+        }
+    }
+
+    .links-list {
+        margin-right: $spacing-xs;
+        margin-bottom: $spacing-2-xs;
+
+        @include breakpoint(l) {
+            margin-bottom: $spacing-xs;
+        }
+
+        a {
+            color: $color-white;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &.hds-button--theme-white:not(:disabled) {
+                &:hover {
+                    background-color: $color-white;
+                    border-color: inherit;
+                }
+            }
+
+            &.hds-button--border-white:not(:disabled) {
+                &:hover {
+                    color: $color-black !important;
+                    background-color: $color-white !important;
+                }
+            }
+        }
+    }
+
+    &__image-copyright {
+        padding: $spacing-2-xs;
+        background-color: $color-white;
+    }
+}
+
+.hero-slider--unit-slider {
+    &.hero-slider {
+        .hero-slider__grid {
+            max-width: 90% !important;
+        }
+
+        .hero-slider-content {
+            grid-column: span 6;
+
+            .page-heading {
+                font-size: $fontsize-heading-m;
+                margin-top: $spacing-layout-xl * 2;
+
+                @include breakpoint(l) {
+                    font-size: $fontsize-heading-xl;
+                    margin-top: $spacing-layout-2-xl;
+                }
+            }
+
+
+            &__image-copyright {
+                position: absolute;
+                right: $spacing-layout-2-xs;
+                bottom: $spacing-layout-xl;
+            }
+        }
+        .glide {
+            &__slide {
+                min-height: unset;
+                background-position: center;
+            }
+        }
+    }
+}

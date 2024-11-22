@@ -1,0 +1,26 @@
+.hds-select-input {
+    &__input-wrapper {
+        position: relative;
+
+        .hds-icon {
+            position: absolute;
+            top: 50%;
+            right: $spacing-2-xs;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__input {
+        font-size: $fontsize-body-m;
+        line-height: 1.25;
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        padding: $spacing-s;
+        color: $color-black;
+        background-color: $color-white;
+        border: 2px solid $color-black-50;
+        border-radius: 2px;
+        -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+    }
+}

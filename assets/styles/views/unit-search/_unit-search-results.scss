@@ -1,0 +1,105 @@
+.unit-search {
+    &__no-results {
+        font-size: $fontsize-heading-m;
+    }
+
+    &__result-meta {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-2-xl;
+
+        @include breakpoint(m) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__result-count {
+        font-size: $fontsize-heading-m;
+        font-weight: 700;
+    }
+
+    &__views {
+        margin-top: $spacing-s;
+
+        @include breakpoint(m) {
+            margin-top: 0;
+        }
+
+        .hds-button {
+            &:first-child {
+                margin-right: $spacing-m;
+            }
+        }
+    }
+
+    &__results {
+        margin-bottom: $spacing-5-xl;
+    }
+
+    &__map-container {
+        position: relative;
+        padding-top: 56.25%;
+
+        .leaflet-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 101%;
+            max-height: 800px;
+        }
+    }
+
+    &__grid {
+        @include grid();
+        @include gutter();
+        margin-bottom: $spacing-5-xl;
+    }
+
+    &__item {
+        font-size: $fontsize-heading-s;
+        font-weight: bold;
+        line-height: $lineheight-m;
+        position: relative;
+        overflow: hidden;
+        height: 7.5rem;
+        grid-column: span 4;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 7rem;
+            background-color: $color-black-90;
+            mask-repeat: no-repeat;
+            mask-position: 0 0;
+            mask-size: 150% auto;
+            mask-image: url(../images/theme-bg-pattern.svg);
+        }
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        padding: 0 $spacing-s;
+        color: $color-black-90;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}

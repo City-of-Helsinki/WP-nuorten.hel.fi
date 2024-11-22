@@ -1,0 +1,30 @@
+.call-to-action {
+    font-size: $fontsize-body-m;
+    font-weight: 700;
+    display: flex;
+    margin-top: $spacing-l;
+    padding: $spacing-m;
+    background-color: $color-engel-medium-light;
+
+    @include breakpoint(l) {
+        justify-content: flex-end;
+        margin-top: $spacing-5-xl;
+        padding: $spacing-l $spacing-xl;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $color-black;
+        text-decoration: none;
+    }
+
+    &__text {
+        display: inline-block;
+        margin: 0 $spacing-s 0 0;
+
+        @include breakpoint(m) {
+            margin-right: $spacing-m;
+        }
+    }
+}

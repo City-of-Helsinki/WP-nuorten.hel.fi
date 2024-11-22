@@ -1,0 +1,67 @@
+.hds-button {
+    &--theme-engel-dark {
+        color: $color-black;
+        background-color: $color-engel-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $color-engel;
+        }
+    }
+
+    &--theme-engel-medium-light {
+        color: $color-black;
+        background-color: $color-engel-medium-light;
+
+        &:hover,
+        &:focus {
+            background-color: $color-engel;
+        }
+    }
+
+    &--color-success {
+        color: $color-white;
+        background-color: $color-success-dark;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            background-color: $color-success;
+        }
+    }
+
+    &--theme-black-bg {
+        color: $color-white;
+        background-color: $color-black;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            background-color: $color-black-80;
+        }
+    }
+
+    &--theme-white {
+        background-color: $color-white;
+    }
+
+    &--outlined {
+        background-color: transparent !important;
+    }
+
+    &--border-black {
+        border-color: $color-black !important;
+    }
+
+    &--border-white {
+        border-color: $color-white !important;
+    }
+}
+
+.hds-button-link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

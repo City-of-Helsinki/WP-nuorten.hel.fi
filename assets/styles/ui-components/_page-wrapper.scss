@@ -1,0 +1,11 @@
+//
+// Wrapper for the whole page
+//
+.page-wrapper {
+
+    // Hide everything beneath opened menu except the header.
+    .is-menu-open & > :not(.site-header) {
+        display: none;
+    }
+
+}

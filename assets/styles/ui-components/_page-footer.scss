@@ -1,0 +1,32 @@
+.page-footer,
+.unit-footer,
+.volunteering-content {
+    > :last-child {
+        margin-bottom: 0 !important;
+
+        &.nuhe-layout {
+            padding-bottom: $spacing-layout-l * 3;
+
+            &.nuhe-attention-bulletin,
+            &.nuhe-text-banner {
+                padding-bottom: $spacing-layout-l;
+            }
+
+            .page-template-page-category-landing & {
+                padding-bottom: $spacing-5-xl;
+            }
+        }
+
+        .koro:not(.koro--before) {
+            display: none;
+        }
+    }
+}
+
+.page-footer {
+    margin-top: $spacing-layout-l;
+
+    .hero + & {
+        margin-top: 0;
+    }
+}

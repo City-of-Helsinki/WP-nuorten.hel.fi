@@ -1,0 +1,46 @@
+.nuhe-card-list {
+    $nuhe-card-list: &;
+
+    &.nuhe-layout--sidebar {
+        padding-bottom: $spacing-xl;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: $spacing-3-xl;
+        padding-bottom: $spacing-2-xs;
+
+        #{$nuhe-card-list}.has-bg-color--white & {
+            border-bottom: 1px solid $color-grey;
+        }
+
+        #{$nuhe-card-list}--has-description & {
+            margin-bottom: $spacing-s;
+        }
+    }
+
+    &__description {
+        margin-bottom: $spacing-3-xl;
+
+        @include breakpoint(l) {
+            max-width: 80%;
+        }
+
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__items {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+}
+

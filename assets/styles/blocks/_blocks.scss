@@ -1,0 +1,35 @@
+// Generic styles for block editor content.
+.blocks {
+
+    > * {
+        margin: 0 0 $spacing-l;
+    }
+
+    h1,h2,h3 {
+        line-height: $lineheight-m;
+    }
+
+    h2,
+    h3 {
+        margin-bottom: $spacing-s;
+    }
+
+    h1 {
+        margin-bottom: $spacing-s;
+    }
+
+    &--front-page {
+        margin-bottom: $spacing-layout-xl;
+    }
+
+}
+
+// Import core blocks here.
+@import "core/block-quote";
+@import "core/list";
+
+// Import custom blocks here.
+@import "custom/lead-paragraph";
+@import "custom/image";
+@import "custom/embed";
+@import "custom/gallery";

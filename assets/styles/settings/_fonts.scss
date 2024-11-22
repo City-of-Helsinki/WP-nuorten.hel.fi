@@ -1,0 +1,98 @@
+// Put fonts here, please.
+// sass-lint:disable-all
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-Regular.svg#HelsinkiGrotesk-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-RegularItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-RegularItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-RegularItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-RegularItalic.svg#HelsinkiGrotesk-RegularItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-Medium.svg#HelsinkiGrotesk-Medium') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-MediumItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-MediumItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-MediumItalic.svg#HelsinkiGrotesk-MediumItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-Bold.svg#HelsinkiGrotesk-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-BoldItalic.svg#HelsinkiGrotesk-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-Black.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-Black.svg#HelsinkiGrotesk-Black') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelsinkiGrotesk';
+    src: url('../fonts/HelsinkiGrotesk-BlackItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/HelsinkiGrotesk-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/HelsinkiGrotesk-BlackItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/HelsinkiGrotesk-BlackItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/HelsinkiGrotesk-BlackItalic.svg#HelsinkiGrotesk-BlackItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+}
