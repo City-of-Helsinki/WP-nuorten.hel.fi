@@ -16,10 +16,10 @@ const wpProjectPath = `${ path.resolve( __dirname, '..', '..', '..', '..' ) }`;
 const wpProjectUrl = 'https://nuorten-helsinki.test';
 
 // Theme paths.
-const helMultisite = path.basename( __dirname );
+const helMultisite = "nuhe"
 const themePath = `/web/app/themes/${ helMultisite }`;
-const themePublicPath = `/app/themes/${ helMultisite }/assets/dist/`;
-const themeFullPath = `${ wpProjectPath }${ themePath }`;
+const themePublicPath = `/wp-content/themes/${ helMultisite }/assets/dist/`;
+const themeFullPath = __dirname;
 const themeEntry = `${ themeFullPath }/assets/scripts/main.js`;
 const themeAdminEntry = `${ themeFullPath }/assets/scripts/admin.js`;
 const themeEditorEntry = `${ themeFullPath }/assets/scripts/editor.js`;
@@ -28,20 +28,6 @@ const themeOutput = `${ themeFullPath }/assets/dist`;
 // All loaders to use on assets.
 const allModules = {
     rules: [
-        {
-            enforce: 'pre',
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'eslint-loader',
-                options: {
-                    configFile: `${ wpProjectPath }/.eslintrc.json`,
-                    fix: false,
-                    failOnWarning: false,
-                    failonError: true,
-                },
-            },
-        },
         {
             test: /\.js$/,
             exclude: /node_modules/,
