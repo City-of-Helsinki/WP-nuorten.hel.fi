@@ -22,11 +22,10 @@ class GravityForms implements Interfaces\Controller {
      * Hooks
      */
     public function hooks() : void {
-        \add_action( 'gform_form_settings', \Closure::fromCallable( [ $this, 'modify_settings' ] ), 10, 2 );
+        \add_action( 'gform_form_settings_fields', \Closure::fromCallable( [ $this, 'modify_settings' ] ), 10, 2 );
         \add_action( 'gform_after_submission', \Closure::fromCallable( [ $this, 'create_initiative' ] ), 10, 2 );
         \add_action( 'gform_after_submission', \Closure::fromCallable( [ $this, 'delete_specific_field_from_entry' ] ), 10, 2);
         \add_filter( 'gform_submit_button', \Closure::fromCallable( [ $this, 'button' ] ) );
-        \add_filter( 'gform_pre_form_settings_save', \Closure::fromCallable( [ $this, 'save_form_setting' ] ) );
     }
 
     /**
@@ -40,26 +39,26 @@ class GravityForms implements Interfaces\Controller {
         $dom = new \DOMDocument();
         $dom->loadHTML( '<?xml encoding="utf-8" ?>' . $button );
 
-        $input      = $dom->getElementsByTagName( 'input' )->item( 0 );
-        $new_button = $dom->createElement( 'button' );
+        $btn = $dom->getElementsByTagName( 'button' )->item( 0 );
 
-        $label = $dom->createElement( 'span' );
-        $label->setAttribute( 'class', 'hds-button__label' );
-        $label->appendChild( $dom->createTextNode( $input->getAttribute( 'value' ) ) );
-
-        $new_button->appendChild( $label );
-
-        $input->removeAttribute( 'value' );
-
-        foreach ( $input->attributes as $attribute ) {
-            $new_button->setAttribute( $attribute->name, $attribute->value );
+        if ( ! $btn ) {
+            return $button;
         }
 
-        $new_button->setAttribute( 'class', 'hds-button hds-button--primary' );
+        // Keep Gravity Forms' own classes and add the HDS ones.
+        $btn->setAttribute( 'class', $btn->getAttribute( 'class' ) . ' hds-button hds-button--primary' );
 
-        $input->parentNode->replaceChild( $new_button, $input );
+        // Move the button's contents into the label span.
+        $label = $dom->createElement( 'span' );
+        $label->setAttribute( 'class', 'hds-button__label' );
 
-        return $dom->saveHtml( $new_button );
+        while ( $btn->firstChild ) {
+            $label->appendChild( $btn->firstChild );
+        }
+
+        $btn->appendChild( $label );
+
+        return $dom->saveHTML( $btn );
     }
 
     /**
@@ -70,30 +69,23 @@ class GravityForms implements Interfaces\Controller {
      *
      * @return array
      */
-    private function modify_settings( array $settings, array $form ) : array {
-        $checked = rgar( $form, 'is_initiative_form' );
-        $checked = ! empty( $checked ) ? ' checked="checked"' : '';
-        $settings[ __( 'Form Basics', 'gravityforms' ) ]['is_initiative_form'] = "
-        <tr>
-           <th><label for='is_initiative_form'>Tämä on aloitelomake</label></th>
-            <td><input{$checked} value='1' name='is_initiative_form' type='checkbox'></td>
-        </tr>";
+    private function modify_settings( array $fields, array $form ) : array {
+        $fields['form_basics']['fields'][] = [
+            'type'    => 'checkbox',
+            'name'    => 'is_initiative_form_group',
+            'label'   => 'Aloitelomake',
+            'choices' => [
+                [
+                    // Choice name is the key saved on the form object.
+                    'name'  => 'is_initiative_form',
+                    'label' => 'Tämä on aloitelomake',
+                ],
+            ],
+        ];
 
-        return $settings;
+        return $fields;
     }
-
-    /**
-     * Save form setting.
-     *
-     * @param array $form Form array.
-     *
-     * @return array
-     */
-    private function save_form_setting( array $form ) : array {
-        $form['is_initiative_form'] = rgpost( 'is_initiative_form' );
-        return $form;
-    }
-
+  
     /**
      * Create initiative.
      *
